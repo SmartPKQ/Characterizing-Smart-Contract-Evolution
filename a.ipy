@@ -1,0 +1,124 @@
+import csv
+import sys
+
+import fasttext as ft
+import matplotlib.pyplot as plt
+import numpy as np
+
+from scripts.common import *
+
+_, model_file, repo_contract_tokens, all_contract_tokens, output_file, *_ = [None, 'solclone/vectorize/model_sg.bin', 'data/normalized_tokens_for_each_contract.txt', 'solclone/data/normalized_tokens_for_each_contract.txt', None]
+verbose = True
+
+import scripts.common as common
+common.verbose = verbose
+
+# load model from model_file
+model = ft.load_model(model_file)
+
+# load data
+addrs, names, vectors1 = load_data(model, repo_contract_tokens)
+_, _, vectors2, *_ = load_data(model, all_contract_tokens, False)
+
+vectors = vectors1
+vectors1, ids = {}, [0] * len(vectors)
+for i, v in enumerate(vectors):
+    v = tuple(v)
+    if v not in vectors1:
+        vectors1[v] = len(vectors1)
+    ids[i] = vectors1[v]
+contracts = {}
+for i, (addr, name, v) in enumerate(zip(addrs, names, vectors)):
+    addr, ver, _ = addr.split('~')
+    addr = addr.strip('.').lstrip('/')
+    ver, tid = int(ver), int(ids[i])
+    if addr not in contracts:
+        contracts[addr] = {}
+    if name not in contracts[addr]:
+        contracts[addr][name] = []
+    contracts[addr][name] += [(ver, tid)]
+
+for addr in contracts:
+    for name in contracts[addr]:
+        contracts[addr][name].sort(key=lambda vertid: vertid[0])
+        prevtid, temp = -1, []
+        for ver, currtid in contracts[addr][name]:
+            if currtid != prevtid:
+                temp += [(ver, currtid)]
+            prevtid = currtid
+        contracts[addr][name] = temp
+
+maxn, totn, m = 0, 0, 0
+for addr in contracts:
+    for name in contracts[addr]:
+        n = len(contracts[addr][name])
+        if n <= 1:
+            continue
+        maxn = max(maxn, n)
+        totn += n
+        m += 1
+avgn = totn / m
+print(totn, m, avgn, maxn)
+
+
+repo_contracts = contracts
+repo_vectors = {}
+for addr, name, v in zip(addrs, names, vectors):
+    addr, ver, _ = addr.split('~')
+    addr = addr.strip('.').lstrip('\/')
+    ver = int(ver)
+    repo_vectors[addr, name, ver] = v
+
+# 相邻相似度分布
+sims = []
+for addr in repo_contracts:
+    for name in repo_contracts[addr]:
+        vers = repo_contracts[addr][name]
+        if len(vers) <= 1:
+            continue
+        for i in range(len(vers) - 1):
+            ver1, tid1 = vers[i]
+            ver2, tid2 = vers[i + 1]
+            v1 = repo_vectors[addr, name, ver1]
+            v2 = repo_vectors[addr, name, ver2]
+            sims += [similarity(v1, v2)]
+
+print(sum(sims) / len(sims), max(sims), min(sims))
+plt.hist(sims, bins=10, range=(0, 1))
+plt.savefig('相邻相似度分布.png')
+
+# 首尾相似度分布
+plt.close()
+sims = []
+for addr in repo_contracts:
+    for name in repo_contracts[addr]:
+        vers = repo_contracts[addr][name]
+        if len(vers) <= 1:
+            continue
+        ver1, tid1 = vers[0]
+        v1 = repo_vectors[addr, name, ver1]
+        ver2, tid2 = vers[-1]
+        v2 = repo_vectors[addr, name, ver2]
+        sims += [similarity(v1, v2)]
+
+print(sum(sims) / len(sims), max(sims), min(sims))
+plt.hist(sims, bins=10, range=(0, 1))
+plt.savefig('首尾相似度分布.png')
+
+# 相似度变化 1
+plt.close()
+for addr in repo_contracts:
+    for name in repo_contracts[addr]:
+        vers = repo_contracts[addr][name]
+        if len(vers) <= 1:
+            continue
+        sims = []
+        ver1, tid1 = vers[0]
+        v1 = repo_vectors[addr, name, ver1]
+        for i in range(1, len(vers)):
+            ver2, tid2 = vers[i]
+            v2 = repo_vectors[addr, name, ver2]
+            sims += [similarity(v1, v2)]
+        plt.plot(sims)
+
+plt.savefig('相似度变化.png')
