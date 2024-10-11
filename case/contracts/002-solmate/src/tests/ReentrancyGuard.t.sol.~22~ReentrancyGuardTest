@@ -1,0 +1,22 @@
+contract ReentrancyGuardTest is DSTest {
+    RiskyContract riskyContract;
+    ReentrancyAttacker reentrancyAttacker;
+
+    function setUp() public {
+        riskyContract = new RiskyContract();
+        reentrancyAttacker = new ReentrancyAttacker();
+    }
+
+    function testFailUnprotectedCall() public {
+        riskyContract.unprotectedCall(reentrancyAttacker);
+
+        assertEq(riskyContract.enterTimes(), 1);
+    }
+
+    function testProtectedCall() public {
+        try riskyContract.protectedCall(reentrancyAttacker) {
+            emit log("Reentrancy Guard Failed To Stop Attacker");
+            fail();
+        } catch {}
+    }
+}

@@ -1,0 +1,3 @@
+contract FakeVault is Auth {
+    function access() public view requiresAuth {}
+}

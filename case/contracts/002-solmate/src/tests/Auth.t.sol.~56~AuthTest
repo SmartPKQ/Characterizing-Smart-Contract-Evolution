@@ -1,0 +1,35 @@
+contract AuthTest is DSTest {
+    FakeVault vault;
+
+    function setUp() public {
+        vault = new FakeVault();
+    }
+
+    function testFailNonOwner1() public {
+        vault.setOwner(address(0));
+        vault.access();
+    }
+
+    function testFailNonOwner2() public {
+        vault.setOwner(address(0));
+        vault.setOwner(address(0));
+    }
+
+    function testFailRejectingAuthority1() public {
+        vault.setAuthority(Authority(address(new BooleanAuthority(false))));
+        vault.setOwner(address(0));
+        vault.access();
+    }
+
+    function testFailRejectingAuthority2() public {
+        vault.setAuthority(Authority(address(new BooleanAuthority(false))));
+        vault.setOwner(address(0));
+        vault.setOwner(address(0));
+    }
+
+    function testAcceptingOwner() public logs_gas {
+        vault.setAuthority(Authority(address(new BooleanAuthority(true))));
+        vault.setOwner(address(0));
+        vault.access();
+    }
+}

@@ -1,0 +1,9 @@
+contract ReentrancyAttacker {
+    function thisWillReenterProtectedCall() external {
+        RiskyContract(msg.sender).protectedCall(ReentrancyAttacker(address(this)));
+    }
+
+    function thisCallWillReenterUnprotectedCall() external {
+        RiskyContract(msg.sender).unprotectedCall(ReentrancyAttacker(address(this)));
+    }
+}
