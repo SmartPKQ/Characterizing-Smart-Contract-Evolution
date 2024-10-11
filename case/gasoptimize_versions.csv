@@ -1,0 +1,532 @@
+001-sushiswap/contracts/MasterChef.sol,MasterChef,40,104,55,105,2818564 Merge pull request #3 from jishankai/optimize_gas
+002-solmate/src/tests/Auth.t.sol,AuthTest,22,398,56,399,078ee96 👷‍♂️ Use logs_gas modifier in concrete tests
+002-solmate/src/tests/ReentrancyGuard.t.sol,RiskyContract,22,420,56,423,078ee96 👷‍♂️ Use logs_gas modifier in concrete tests
+002-solmate/src/tests/ReentrancyGuard.t.sol,ReentrancyGuardTest,36,422,56,424,078ee96 👷‍♂️ Use logs_gas modifier in concrete tests
+002-solmate/src/tests/RolesAuthority.t.sol,RolesAuthorityTest,37,429,56,430,078ee96 👷‍♂️ Use logs_gas modifier in concrete tests
+002-solmate/src/tests/TrustAuthority.t.sol,TrustAuthorityTest,37,439,56,440,078ee96 👷‍♂️ Use logs_gas modifier in concrete tests
+002-solmate/src/tests/Trust.t.sol,TrustTest,37,444,56,445,078ee96 👷‍♂️ Use logs_gas modifier in concrete tests
+002-solmate/src/test/utils/DSTestPlus.sol,DSTestPlus,221,482,261,483,801d26c ♻️ Fix gas measuring in DSTestPlus
+023-argent-contracts/contracts/modules/common/LimitManager.sol,LimitManager,50,4853,52,4726,36e0713 switched 2 lines in LimitManager to potentially save some gas as sugested by auditor
+027-template-ethereum-contracts/src/Test/ERC20WithInitialBalance.sol,ERC20WithInitialBalance,2,5332,23,5333,d7edff3 add hardhat-gas-reporter + fix lint
+028-contracts/contracts/Forwarder.sol,Forwarder,408,5565,410,5566,3870401 Successful gasless txs
+028-contracts/contracts/interfaces/marketplace/IMarketplace.sol,IMarketplace,997,5730,1021,5731,5f99059 fix marketplace acceptOffer. reduce gas
+028-contracts/contracts/lib/CurrencyTransferLib.sol,CurrencyTransferLib,913,5870,1021,5871,5f99059 fix marketplace acceptOffer. reduce gas
+028-contracts/contracts/marketplace/Marketplace.sol,Marketplace,997,5921,1021,5922,5f99059 fix marketplace acceptOffer. reduce gas
+028-contracts/contracts/Market.sol,Market,390,5973,413,5974,178ce85 Make Market gasless
+028-contracts/contracts/PackERC1155.sol,PackERC1155,195,6139,201,6140,75cc063 Optimize gas; add gas test scripts
+028-contracts/contracts/PackHandler.sol,PackHandler,194,6148,201,6149,75cc063 Optimize gas; add gas test scripts
+028-contracts/contracts/PackMarket.sol,PackMarket,174,6189,201,6190,75cc063 Optimize gas; add gas test scripts
+028-contracts/contracts/Pack.sol,Pack,406,6258,408,6259,0dc247a Gasless tx test: success!
+028-contracts/contracts/Rewards.sol,Rewards,411,6406,412,6407,9bfc0db make Rewards gasless
+035-kleros/contracts/kleros/KlerosLiquid.sol,KlerosLiquid,152,7341,154,7342,6a85dc6 feat(kleros-liquid): save gas by computing and storing rewards
+040-contracts/contracts/optimistic-ethereum/iOVM/bridge/tokens/iOVM_L1TokenGateway.sol,iOVM_L1TokenGateway,178,7685,195,7686,7d6ce48 Remove gas estimators from gateway interface (#297)
+040-contracts/contracts/optimistic-ethereum/iOVM/bridge/tokens/iOVM_L2DepositedToken.sol,iOVM_L2DepositedToken,178,7689,195,7690,7d6ce48 Remove gas estimators from gateway interface (#297)
+040-contracts/contracts/optimistic-ethereum/iOVM/chain/iOVM_ChainStorageContainer.sol,iOVM_ChainStorageContainer,117,7705,209,7706,ad7d439 feat: CanonicalTransactionChain gas optimizations (#228)
+040-contracts/contracts/optimistic-ethereum/libraries/codec/Lib_OVMCodec.sol,Lib_OVMCodec,202,7780,209,7781,ad7d439 feat: CanonicalTransactionChain gas optimizations (#228)
+040-contracts/contracts/optimistic-ethereum/libraries/utils/Lib_RingBuffer.sol,Lib_RingBuffer,207,7859,209,7860,ad7d439 feat: CanonicalTransactionChain gas optimizations (#228)
+040-contracts/contracts/optimistic-ethereum/OVM/accounts/OVM_ECDSAContractAccount.sol,OVM_ECDSAContractAccount,59,7898,68,7899,6a4d48a Audit/dapphub b02 gas relaying check (#85)
+040-contracts/contracts/optimistic-ethereum/OVM/accounts/OVM_ECDSAContractAccount.sol,OVM_ECDSAContractAccount,84,7900,94,7901,e8c1b8d Temporarily disable gas checks (#135)
+040-contracts/contracts/optimistic-ethereum/OVM/accounts/OVM_ECDSAContractAccount.sol,OVM_ECDSAContractAccount,235,7905,240,7906,b4a2936 Have ECDSAContractAccount use max available gas (#359)
+040-contracts/contracts/optimistic-ethereum/OVM/bridge/tokens/Abs_L1TokenGateway.sol,Abs_L1TokenGateway,178,7952,195,7953,7d6ce48 Remove gas estimators from gateway interface (#297)
+040-contracts/contracts/optimistic-ethereum/OVM/bridge/tokens/Abs_L2DepositedToken.sol,Abs_L2DepositedToken,178,7955,195,7956,7d6ce48 Remove gas estimators from gateway interface (#297)
+040-contracts/contracts/optimistic-ethereum/OVM/chain/OVM_CanonicalTransactionChain.sol,OVM_CanonicalTransactionChain,207,7999,209,8000,ad7d439 feat: CanonicalTransactionChain gas optimizations (#228)
+040-contracts/contracts/optimistic-ethereum/OVM/chain/OVM_ChainStorageContainer.sol,OVM_ChainStorageContainer,207,8005,209,8007,ad7d439 feat: CanonicalTransactionChain gas optimizations (#228)
+040-contracts/contracts/optimistic-ethereum/OVM/execution/OVM_ExecutionManager.sol,OVM_ExecutionManager,162,8043,172,8044,2d9e413 Reset Context on invalid gaslimit (#260)
+042-contractsV2/contracts/connectors/gastoken/GasTokenUser.sol,GasTokenUser,40,8240,49,8241,d4493f2 refactoring of modules folder structure; improvements to gastoken logic
+042-contractsV2/contracts/connectors/gastoken/GasTokenUser.sol,GasTokenUser,67,8242,68,8244,de0c6b7 updates to gastoken logic
+042-contractsV2/contracts/connectors/gastoken/TokenHolder.sol,TokenHolder,68,8246,98,8247,e8717d6 update to GasTokenHolder
+042-contractsV2/contracts/connectors/loantoken/LoanTokenLogicDai.sol,LoanTokenLogicDai,42,8270,49,8271,d4493f2 refactoring of modules folder structure; improvements to gastoken logic
+042-contractsV2/contracts/connectors/loantoken/LoanTokenLogicStandard.sol,LoanTokenLogicStandard,42,8283,49,8284,d4493f2 refactoring of modules folder structure; improvements to gastoken logic
+042-contractsV2/contracts/modules/LoanClosings/LoanClosingsBase.sol,LoanClosingsBase,57,8673,58,8674,66e00a2 Merge pull request #12 from bZxNetwork/small-optimization-save-gas
+042-contractsV2/contracts/modules/LoanMaintenance/LoanMaintenance.sol,LoanMaintenance,61,8724,64,8725,029a255 gas optimizations
+042-contractsV2/contracts/staking/StakingV1_1.sol,StakingV1_1,419,8952,421,8953,"56b0017 Removed crv from old staking, useless comparred to used gas (#216)"
+042-contractsV2/contracts/staking/StakingV1.sol,StakingV1,190,8981,191,8982,c160c8c Added gas token functions for sweepfees; other cleanup
+043-pos-portal/contracts/root/RootChainManager/RootChainManager.sol,RootChainManager,80,9278,83,9279,962da54 Merge pull request #65 from nachomazzara/feat/optimize-gas-usage
+047-WETH10/contracts/interfaces/IWETH10.sol,IWETH10,46,9805,56,9806,8db235c feat: reduce gas costs by always returning a value
+047-WETH10/contracts/interfaces/IWETH10.sol,IWETH10,56,9806,57,9805,"eaa4711 Revert ""feat: reduce gas costs by always returning a value"""
+047-WETH10/contracts/WETH10.sol,WETH10,38,9855,41,9856,deaba3b Merge pull request #77 from WETH10/feat/gas-golfing-balances
+047-WETH10/contracts/WETH10.sol,WETH10,53,9871,56,9872,8db235c feat: reduce gas costs by always returning a value
+047-WETH10/contracts/WETH10.sol,WETH10,56,9872,57,9871,"eaa4711 Revert ""feat: reduce gas costs by always returning a value"""
+055-nft-editions/contracts/MinterRules.sol,MinterRules,3,10960,4,10961,a9abd0e add gas limit
+059-aragon-network-token/contracts/IrrevocableVestedToken.sol,IrrevocableVestedToken,90,11278,95,11279,284af5f Out of gas attack by spamming a user with grants. Limit to 20.
+060-oneswap_contract_ethereum/contracts/interfaces/IOneSwapGov.sol,IOneSwapGov,2,11432,8,11433,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/interfaces/IOneSwapPair.sol,IOneSwapPool,2,11437,8,11440,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/interfaces/IOneSwapPair.sol,IOneSwapPair,2,11438,8,11441,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/libraries/DecFloat32.sol,DecFloat32,2,11449,8,11450,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/libraries/ProxyData.sol,ProxyData,7,11451,8,11452,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapFactory.sol,OneSwapFactory,7,11464,12,11465,53f78ec Optimize gas and format code
+060-oneswap_contract_ethereum/contracts/OneSwapGov.sol,OneSwapGov,2,11467,8,11468,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapPair.sol,OneSwapERC20,5,11479,8,11483,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapPair.sol,OneSwapPool,5,11480,8,11484,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapPair.sol,OneSwapPair,6,11482,8,11485,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapRouter.sol,OneSwapRouter,7,11493,8,11494,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapToken.sol,OneSwapToken,7,11496,8,11497,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/SupervisedSend.sol,SupervisedSend,8,11498,13,11499,28b6243 Optimize gas again
+061-conditional-tokens-contracts/contracts/PredictionMarketSystem.sol,ConditionalTokens,187,11629,188,11630,6348821 Merge pull request #46 from gnosis/gas-optimizations
+064-DeFiOptions-core/contracts/finance/OptionsExchange.sol,OptionsExchange,25,12150,27,12151,d360fc4 Optimizing gas usage
+064-DeFiOptions-core/contracts/finance/OptionsExchange.sol,OptionsExchange,81,12164,82,12165,95ed710 Adopting collateral estimation for reduced gas usage
+064-DeFiOptions-core/contracts/finance/OptionsExchange.sol,OptionsExchange,83,12166,84,12167,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/contracts/governance/ProtocolSettings.sol,ProtocolSettings,1,12253,84,12254,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/contracts/interfaces/LiquidityPool.sol,LiquidityPool,76,12285,84,12286,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/contracts/pools/LinearLiquidityPool.sol,LinearLiquidityPool,83,12331,84,12332,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/common/actors/OptionsTrader.sol,OptionsTrader,34,12382,84,12383,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/common/actors/PoolTrader.sol,PoolTrader,37,12391,84,12392,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/common/mock/ERC20Mock.sol,ERC20Mock,116,12411,117,12412,"80817f0 Fixing ""out of gas"" error when running unit tests"
+064-DeFiOptions-core/test/finance/CreditToken/Base.sol,Base,116,12452,117,12453,"80817f0 Fixing ""out of gas"" error when running unit tests"
+064-DeFiOptions-core/test/finance/OptionsExchange/Base.sol,Base,31,12467,84,12468,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/finance/OptionsExchange/Base.sol,Base,116,12474,117,12475,"80817f0 Fixing ""out of gas"" error when running unit tests"
+064-DeFiOptions-core/test/finance/OptionsExchange/TestOptionTrading.sol,TestOptionTrading,1,12494,84,12495,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/finance/OptionsExchange/TestWriteOptions.sol,TestWriteOptions,12,12501,44,12502,fc5e8f7 Optimizing test gas usage to prevent it from failing
+064-DeFiOptions-core/test/finance/OptionsExchange/TestWriteOptions.sol,TestWriteOptions,58,12503,84,12504,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/pools/LinearLiquidityPool/Base.sol,Base,83,12544,84,12546,80708e4 Refactoring code for reducing gas usage
+064-DeFiOptions-core/test/pools/LinearLiquidityPool/Base.sol,Base,116,12548,117,12549,"80817f0 Fixing ""out of gas"" error when running unit tests"
+064-DeFiOptions-core/test/pools/LinearLiquidityPool/TestMulticoinTrading.sol,TestMulticoinTrading,116,12558,117,12559,"80817f0 Fixing ""out of gas"" error when running unit tests"
+065-land/contracts/estate/EstateRegistry.sol,EstateRegistry,142,12625,144,12626,78c067a feat: save gas removing updateOperator event (#134)
+065-land/contracts/LANDTerraformSale.sol,LANDTerraformSale,18,12719,40,12720,f6413dd Merge pull request #13 from decentraland/terraform-reduce-gas-cost
+065-land/full/EstateRegistry.sol,EstateRegistry,142,12625,144,12626,78c067a feat: save gas removing updateOperator event (#134)
+066-LinkToken/contracts/TokenSale.sol,TokenSale,25,12960,26,12961,8eba26e optimize better gas usage
+066-LinkToken/contracts/TokenSale.sol,TokenSale,52,12972,56,12973,d057503 move time window amounts out of storage for gas costs
+066-LinkToken/contracts/TokenSale.sol,TokenSale,64,12977,66,12978,7ccbd1a cut down gas costs to below 65k
+068-shrine/src/ShrineFactory.sol,ShrineFactory,9,13118,10,13119,5f06205 perf(factory): optimize gas cost of creating a Shrine
+068-shrine/src/test/ShrineFactory.t.sol,ShrineFactoryTest,9,13124,10,13125,5f06205 perf(factory): optimize gas cost of creating a Shrine
+069-dodo-smart-contract/contracts/DODOEthProxy.sol,DODOEthProxy,15,13131,19,13132,65015c0 gas optimize
+069-dodo-smart-contract/contracts/DODOEthProxy.sol,DODOEthProxy,72,13136,73,13137,d1ebe23 use safe erc20 & new logGas
+069-dodo-smart-contract/contracts/DODOZoo.sol,DODOZoo,18,13146,31,13147,739195b simplify code to reduce deploy gas cost
+069-dodo-smart-contract/contracts/impl/Settlement.sol,Settlement,29,13219,36,13220,03a6d6e reduce gas cost
+069-dodo-smart-contract/contracts/impl/Trader.sol,Trader,1,13230,19,13231,65015c0 gas optimize
+069-dodo-smart-contract/contracts/intf/IERC20.sol,IERC20,9,13245,31,13246,739195b simplify code to reduce deploy gas cost
+069-dodo-smart-contract/contracts/lib/SafeERC20.sol,SafeERC20,1,13259,73,13260,d1ebe23 use safe erc20 & new logGas
+073-contractV2/contracts/DODOEthProxy.sol,DODOEthProxy,15,13131,19,13132,65015c0 gas optimize
+073-contractV2/contracts/DODOEthProxy.sol,DODOEthProxy,72,13136,73,13137,d1ebe23 use safe erc20 & new logGas
+073-contractV2/contracts/DODOVendorMachine/impl/DVM.sol,DVM,101,13801,108,13802,39e2134 set gas price to external contract
+073-contractV2/contracts/DODOVendorMachine/impl/DVMStorage.sol,DVMStorage,101,13806,108,13807,39e2134 set gas price to external contract
+073-contractV2/contracts/DODOVendorMachine/impl/DVMTrader.sol,DVMTrader,104,13815,108,13816,39e2134 set gas price to external contract
+073-contractV2/contracts/DODOVendorMachine/intf/IDVM.sol,IDVM,101,13823,108,13824,39e2134 set gas price to external contract
+073-contractV2/contracts/DODOZoo.sol,DODOZoo,18,13146,31,13147,739195b simplify code to reduce deploy gas cost
+073-contractV2/contracts/Factory/DVMFactory.sol,DVMFactory,101,13896,108,13897,39e2134 set gas price to external contract
+073-contractV2/contracts/impl/Settlement.sol,Settlement,29,13219,36,13220,03a6d6e reduce gas cost
+073-contractV2/contracts/impl/Trader.sol,Trader,1,13230,19,13231,65015c0 gas optimize
+073-contractV2/contracts/intf/IERC20.sol,IERC20,9,13245,31,13246,739195b simplify code to reduce deploy gas cost
+073-contractV2/contracts/lib/SafeERC20.sol,SafeERC20,1,13259,73,13260,d1ebe23 use safe erc20 & new logGas
+073-contractV2/contracts/SmartRoute/DODOIncentive.sol,DODOIncentive,228,14093,247,14094,34d9ccf annotation && v2proxy add gasreturn and trade incentive && proxyV2 incentive test
+073-contractV2/contracts/SmartRoute/DODOV2Proxy01.sol,DODOV2Proxy01,246,14137,247,14138,34d9ccf annotation && v2proxy add gasreturn and trade incentive && proxyV2 incentive test
+073-contractV2/contracts/SmartRoute/intf/IDODOV2Proxy01.sol,IDODOV2Proxy01,246,14188,247,14189,34d9ccf annotation && v2proxy add gasreturn and trade incentive && proxyV2 incentive test
+075-Avastars-Contracts/contracts/AvastarTypes.sol,AvastarTypes,157,14337,174,14338,0457ac3 L08 Tightly Packing Traits Struct Will Save Gas
+075-Avastars-Contracts/contracts/TraitFactory.sol,TraitFactory,95,14376,96,14377,"fec786a Allow extension of trait art * In TraitFactory.sol,   - added TraitArtExtended event   - added extendTraitArt function which,     - takes a trait id and svg string as arguments     - requires that the trait id not be larger than the trait array length     - concatenates the given trait's svg property with the incoming svg argument   - replaced the strConcat function with a far more performant version that uses less gas"
+075-Avastars-Contracts/contracts/TraitFactory.sol,TraitFactory,171,14387,173,14388,e0859fb L08 Tightly Packing Traits Struct Will Save Gas
+076-erc721-extensions/contracts/RandomlyAssigned.sol,RandomlyAssigned,36,14428,37,14429,8688bbf Remove nonce from randomiser to save on gas.
+083-cryptofin-solidity/contracts/array-utils/AddressArrayUtils.sol,AddressArrayUtils,16,15951,17,15952,"6c5f453 Add and rename functions, add tests, add gas reporting"
+083-cryptofin-solidity/contracts/array-utils/UIntArrayUtils.sol,UIntArrayUtils,16,15957,17,15958,"6c5f453 Add and rename functions, add tests, add gas reporting"
+083-cryptofin-solidity/test/array-utils/TestAddressArrayUtils2.sol,TestAddressArrayUtils2,16,15966,17,15967,"6c5f453 Add and rename functions, add tests, add gas reporting"
+083-cryptofin-solidity/test/array-utils/TestAddressArrayUtils.sol,TestAddressArrayUtils,13,15975,17,15976,"6c5f453 Add and rename functions, add tests, add gas reporting"
+083-cryptofin-solidity/test/array-utils/TestUIntArrayUtils.sol,TestUIntArrayUtils,16,15978,17,15979,"6c5f453 Add and rename functions, add tests, add gas reporting"
+085-kleros-interaction/contracts/standard/permission/ArbitrableTokenList.sol,ArbitrableTokenList,442,16350,443,16351,34d23ab feat(gas): reduce gas for requiredForSide
+087-defisaver-v3-contracts/contracts/actions/ActionBase.sol,ActionBase,30,16730,33,16731,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/actions/exchange/DfsSell.sol,DFSSell,29,16828,33,16829,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/actions/mcd/McdGenerate.sol,McdGenerate,29,16951,33,16952,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/actions/mcd/McdOpen.sol,McdOpen,27,16973,33,16974,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/actions/mcd/McdPayback.sol,McdPayback,29,16983,33,16984,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/actions/mcd/McdSupply.sol,McdSupply,29,16998,33,17000,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/actions/mcd/McdWithdraw.sol,McdWithdraw,29,17019,33,17020,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/core/StrategyExecutor.sol,StrategyExecutor,13,17171,21,17172,508df5f Add gas burning for strategies
+087-defisaver-v3-contracts/contracts/core/TaskManager.sol,TaskManager,30,17209,33,17210,13692b3 Handle gas token
+087-defisaver-v3-contracts/contracts/utils/GasBurner.sol,GasBurner,21,17457,33,17458,13692b3 Handle gas token
+091-smart-contracts/contracts/CommitReveal.sol,CommitReveal,31,18162,51,18163,69ed011 (9/n) * Handle expired working groups separately for gas reasons. * Form pending nodes with existing working groups into new groups when necessary
+091-smart-contracts/contracts/DOSOnChainSDK.sol,DOSOnChainSDK,10,18194,41,18195,"8755148 gas optimization 3 - switch to external function, packing struct write, etc."
+091-smart-contracts/contracts/DOSProxy.sol,UserContractInterface,10,18227,41,18256,"8755148 gas optimization 3 - switch to external function, packing struct write, etc."
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,32,18245,33,18246,3bd944e lower number of bootstrap nodes to get rid to ensure cost less than block gas limit
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,34,18249,35,18250,384c8b9 update pendingNode array with linkedlist to save gas
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,37,18252,38,18253,6d9af15 gas optimization reduce SSTORE
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,38,18253,39,18254,8b088a2 gas optimization 2
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,40,18255,41,18257,"8755148 gas optimization 3 - switch to external function, packing struct write, etc."
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,49,18263,51,18264,69ed011 (9/n) * Handle expired working groups separately for gas reasons. * Form pending nodes with existing working groups into new groups when necessary
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,92,18294,94,18295,3247aad Remove some set functions to fix out of gas issue when deploying
+091-smart-contracts/contracts/examples/AskMeAnything.sol,AskMeAnything,20,18325,41,18326,"8755148 gas optimization 3 - switch to external function, packing struct write, etc."
+091-smart-contracts/contracts/examples/CoinbaseEthUsd.sol,CoinbaseEthUsd,10,18334,41,18335,"8755148 gas optimization 3 - switch to external function, packing struct write, etc."
+091-smart-contracts/contracts/examples/SimpleDice.sol,SimpleDice,10,18343,41,18344,"8755148 gas optimization 3 - switch to external function, packing struct write, etc."
+094-rmm-core/contracts/interfaces/engine/IPrimitiveEngineErrors.sol,IPrimitiveEngineErrors,124,18551,127,18552,"4dc89fc fix(event-vars): adds vars to events, adds errors, fixes gas sloads"
+094-rmm-core/contracts/interfaces/engine/IPrimitiveEngineEvents.sol,IPrimitiveEngineEvents,118,18564,127,18565,"4dc89fc fix(event-vars): adds vars to events, adds errors, fixes gas sloads"
+094-rmm-core/contracts/interfaces/engine/IPrimitiveEngineView.sol,IPrimitiveEngineView,112,18588,127,18589,"4dc89fc fix(event-vars): adds vars to events, adds errors, fixes gas sloads"
+094-rmm-core/contracts/PrimitiveEngine.sol,PrimitiveEngine,121,18803,127,18804,"4dc89fc fix(event-vars): adds vars to events, adds errors, fixes gas sloads"
+098-gearbox-contracts/contracts/credit/CreditManager.sol,CreditManager,84,19385,85,19386,64055b5 gas optimisation trick fixed
+108-smart-contract/contracts/ProxyLogics/InstaUniswapPool.sol,Helper,93,20712,95,20715,3ff4306 setApproval gas efficiency
+108-smart-contract/contracts/ProxyLogics/InstaUniswapPool.sol,InstaUniswapPool,93,20713,94,20714,fc3c03d uniswapExchange instance for gas optimization
+118-beefy-contracts/contracts/BIFI/strategies/degens/StrategyApeLP.sol,StrategyApeLP,61,22115,101,21384,61a54d7 Update StrategyApeLP with GasThrottler
+118-beefy-contracts/contracts/BIFI/strategies/degens/StrategyPalm.sol,StrategyPalm,94,22198,102,22199,674d8ca Fix gasThrottle in StrategyPalm
+118-beefy-contracts/contracts/BIFI/strategies/Sushi/StrategyArbSushiLP.sol,StrategyArbSushiLP,286,22426,287,22427,d58fc7e Arb gas throttler with switch (#100)
+118-beefy-contracts/contracts/BIFI/strategies/Sushi/StrategyArbSushiLP.sol,StrategyArbSushiLP,287,22427,288,22428,858b99f gasthrottle
+118-beefy-contracts/contracts/BIFI/strategies/Venus/StrategyVenus.sol,StrategyVenus,9,22466,100,22467,84af785 Update StrategyVenus with GasThrottler
+118-beefy-contracts/contracts/BIFI/utils/GasThrottler.sol,GasThrottler,80,22487,288,22488,858b99f gasthrottle
+119-88mph-contracts/contracts/DInterest.sol,DInterest,102,22591,104,22592,"4c02504 Gas optimized rolloverDeposit(), add funder MPH reward distribution, add additional checks around moneyMarket.withdraw() in DInterest"
+119-88mph-contracts/contracts/DInterest.sol,DInterest,161,22609,162,22610,6459177 Gas optimization by reducing SLOADs using memory locations
+119-88mph-contracts/contracts/DInterest.sol,DInterest,166,22611,168,22612,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/libs/ERC20Wrapper.sol,ERC20Wrapper,135,22691,163,22692,e1df42d Replace public with external to save gas
+119-88mph-contracts/contracts/moneymarkets/aave/AaveMarket.sol,AaveMarket,158,22826,168,22827,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/moneymarkets/bprotocol/BProtocolMarket.sol,BProtocolMarket,158,22842,168,22843,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/moneymarkets/compound/CompoundERC20Market.sol,CompoundERC20Market,158,22867,168,22868,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/moneymarkets/cream/CreamERC20Market.sol,CreamERC20Market,158,22881,168,22882,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/moneymarkets/harvest/HarvestMarket.sol,HarvestMarket,158,22899,168,22900,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/moneymarkets/MoneyMarket.sol,MoneyMarket,158,22918,168,22919,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/moneymarkets/yvault/YVaultMarket.sol,YVaultMarket,158,22938,168,22939,ef52ed2 Gas optimize calls to incomeIndex() in DInterest
+119-88mph-contracts/contracts/rewards/MPHToken.sol,MPHToken,95,22997,163,22998,e1df42d Replace public with external to save gas
+120-mint.club-contract/contracts/MintClubFactory.sol,MintClubFactory,6,23117,7,23118,f39bebb Gas cost optimization using EIP-1167 proxy pattern
+128-dss-deploy/src/DssDeploy.sol,DssDeploy,261,23672,266,23673,e1ed265 Split taxation and auctions deployment due gas issue
+128-dss-deploy/src/DssDeploy.t.base.sol,DssDeployTestBase,250,23745,266,23746,e1ed265 Split taxation and auctions deployment due gas issue
+128-dss-deploy/src/DssDeploy.t.sol,DssDeployTest,257,23852,266,23853,e1ed265 Split taxation and auctions deployment due gas issue
+131-loan/contracts/MapleLoanInternals.sol,MapleLoanInternals,69,24232,77,24233,1c2e5a0 fix: If statement gas optimization (C4 #65) (#102)
+131-loan/contracts/MapleLoanInternals.sol,MapleLoanInternals,80,24236,82,24237,9be5faa fix: More gas optimizations (#107)
+131-loan/contracts/MapleLoan.sol,MapleLoan,75,24272,82,24273,9be5faa fix: More gas optimizations (#107)
+132-nftx-protocol-v2/contracts/solidity/NFTXInventoryStaking.sol,NFTXInventoryStaking,90,24821,91,24822,6f28f07 Gas optimization
+133-CoFiX/contracts/CoFiXController.sol,CoFiXController,92,25018,94,25019,eb32f21 minor on gas saving
+135-bonding-curves/contracts/CurveBondedToken.sol,CurveBondedToken,13,25267,15,25268,e37a16e extract MaxGasPrice.sol and fix test
+137-raiden-contracts/raiden_contracts/data/source/services/OneToN.sol,OneToN,657,25741,809,25887,5d1d0d1 Add bulkClaim to OneToN to allow saving gas
+142-T-REX/contracts/registry/ClaimTypesRegistry.sol,ClaimTypesRegistry,1,26484,10,26485,cdd71f5 Made code gas effective
+142-T-REX/contracts/registry/IdentityRegistry.sol,IdentityRegistry,5,26494,10,26495,cdd71f5 Made code gas effective
+142-T-REX/contracts/registry/TrustedIssuersRegistry.sol,TrustedIssuersRegistry,1,26520,10,26521,cdd71f5 Made code gas effective
+153-sushiswap-settlement/contracts/interfaces/ISettlement.sol,ISettlement,45,27146,56,27147,74f218a Optimize gas fee for cancelOrder
+153-sushiswap-settlement/contracts/Settlement.sol,Settlement,55,27212,56,27213,74f218a Optimize gas fee for cancelOrder
+153-sushiswap-settlement/contracts/Settlement.sol,Settlement,73,27220,75,27221,7dca74a Optimize Settlement in a gas efficient way
+154-govblocks-protocol/contracts/FeatureWeighted.sol,FeatureWeighted,278,27281,483,27282,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/GBTStandardToken.sol,GBTStandardToken,480,27306,485,27307,26164a1 Optimized gas usage - Working
+154-govblocks-protocol/contracts/GovBlocksMaster.sol,GovBlocksMaster,480,27364,483,27365,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/GovBlocksMaster.sol,GovBlocksMaster,483,27365,485,27366,26164a1 Optimized gas usage - Working
+154-govblocks-protocol/contracts/governanceData.sol,governanceData,480,27548,483,27549,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/governanceData.sol,governanceData,483,27549,485,27550,26164a1 Optimized gas usage - Working
+154-govblocks-protocol/contracts/governanceData.sol,governanceData,591,27563,593,27564,137ee88 Changes made to fit block gas limit
+154-govblocks-protocol/contracts/GovernanceData.sol,GovernanceData,728,27588,731,27589,77cb576 Minor optimizations and increased Oraclize apicall gas
+154-govblocks-protocol/contracts/Governance.sol,Governance,482,27672,483,27673,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/Governance.sol,Governance,483,27673,485,27674,26164a1 Optimized gas usage - Working
+154-govblocks-protocol/contracts/Governance.sol,Governance,485,27674,488,27675,c7e1cb8 Optimized gas by making a few functions internal
+154-govblocks-protocol/contracts/Governance.sol,Governance,557,27687,562,27688,d1ba6b1 Optimized gas and Added reputation of member
+154-govblocks-protocol/contracts/Governance.sol,Governance,591,27694,593,27695,137ee88 Changes made to fit block gas limit
+154-govblocks-protocol/contracts/Master.sol,Master,447,27886,451,27887,f350434 Added comments and made global objects to save gas
+154-govblocks-protocol/contracts/Master.sol,Master,480,27890,483,27891,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/Master.sol,Master,484,27892,485,27893,26164a1 Optimized gas usage - Working
+154-govblocks-protocol/contracts/Master.sol,Master,546,27900,567,27901,"6b4f191 Optimized gas usage, Rectfied condition check"
+154-govblocks-protocol/contracts/memberRoles.sol,memberRoles,480,27979,483,27980,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/Pool.sol,Pool,480,28064,483,28065,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/Pool.sol,Pool,692,28081,693,28082,60a383f Custom Oraclize gasLimit
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,482,28164,483,28165,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/RankBasedVoting.sol,RankBasedVoting,278,28282,483,28283,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/simpleVoting.sol,simpleVoting,482,28347,483,28348,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/simpleVoting.sol,simpleVoting,483,28348,485,28349,26164a1 Optimized gas usage - Working
+154-govblocks-protocol/contracts/SimpleVoting.sol,SimpleVoting,692,28388,693,28389,60a383f Custom Oraclize gasLimit
+154-govblocks-protocol/contracts/SimpleVoting.sol,SimpleVoting,730,28397,731,28398,77cb576 Minor optimizations and increased Oraclize apicall gas
+154-govblocks-protocol/contracts/StandardVotingType.sol,StandardVotingType,448,28467,451,28468,f350434 Added comments and made global objects to save gas
+154-govblocks-protocol/contracts/StandardVotingType.sol,StandardVotingType,482,28470,483,28471,8bd906c Gas optimization is in progress
+154-govblocks-protocol/contracts/zeppelin-solidity/contracts/math/SafeMath.sol,SafeMath,17,28520,485,28288,26164a1 Optimized gas usage - Working
+157-Contracts/PopsicleProjectVesting.sol,IceProject_Vesting,11,28850,14,28851,58047c6 Deployment Gas saving
+162-gwei-slim-erc721/contracts/ChildNFTEmpty.sol,ChildNFTEmpty,14,29116,15,29117,c95458f updating for gas
+162-gwei-slim-erc721/contracts/DelegatedLogic.sol,DelegatedLogic,2,29138,3,29139,f0b64fb gas saving patterns
+162-gwei-slim-erc721/contracts/ERC721BaseFactory.sol,ERC721BaseFactory,2,29147,3,29148,f0b64fb gas saving patterns
+162-gwei-slim-erc721/contracts/ERC721Base.sol,ERC721Base,2,29150,3,29151,f0b64fb gas saving patterns
+165-NEST-Oracle-V3/NestOffer/Nest_3_MiningContract.sol,Nest_3_MiningContract,2,29309,3,29310,e4c9e96 Optimize gas
+165-NEST-Oracle-V3/VoteContract/Nest_3_VoteFactory.sol,Nest_3_VoteFactory,2,29373,3,29379,e4c9e96 Optimize gas
+165-NEST-Oracle-V3/VoteContract/Nest_3_VoteFactory.sol,Nest_3_VoteContract,2,29374,3,29380,e4c9e96 Optimize gas
+175-contracts/contracts/lib/PartnerRegistry.sol,PartnerRegistry,14,31639,19,31640,"d3d5b2b Updated addresses. Added ZeroExV3ExchangeHandler, new primary with gas price capping."
+175-contracts/contracts/lib/Partner.sol,Partner,14,31641,19,31642,"d3d5b2b Updated addresses. Added ZeroExV3ExchangeHandler, new primary with gas price capping."
+175-contracts/contracts/TotlePrimary.sol,TotlePrimary,16,31593,19,31666,"d3d5b2b Updated addresses. Added ZeroExV3ExchangeHandler, new primary with gas price capping."
+179-async-contracts/contracts/AsyncArtwork_v2.sol,AsyncArtwork_v2,95,31869,96,31870,bed7a7f Proper use of gas for call
+183-CORE-v1/contracts/CoreVault.sol,CoreVault,12,32119,13,32120,"fcfa4a3 SANITY: This functions shoudn't be there and instead be guided by a router, the gas savings a neglidible and not worth it"
+191-charged-particles-universe/contracts/ChargedParticles.sol,ChargedParticles,26,32393,27,32394,aef269f Updates to reduce Gas Fees when Minting Protons
+191-charged-particles-universe/contracts/ChargedParticles.sol,ChargedParticles,58,32404,61,32405,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/ChargedSettings.sol,ChargedSettings,55,32408,61,32409,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/ChargedState.sol,ChargedState,55,32411,61,32412,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/interfaces/IChargedSettings.sol,IChargedSettings,55,32452,61,32453,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/interfaces/IChargedState.sol,IChargedState,55,32455,61,32456,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/interfaces/IUniverse.sol,IUniverse,57,32488,61,32489,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/lib/SmartWalletBase.sol,SmartWalletBase,44,32530,61,32531,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/tokens/Lepton.sol,Lepton,57,32561,61,32562,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/tokens/Photon.sol,Photon,33,32564,39,32565,5de7440 Update all require() statements to use Error Codes for Gas Savings
+191-charged-particles-universe/contracts/tokens/Photon.sol,Photon,43,32566,61,32567,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/tokens/Proton.sol,Proton,26,32581,27,32582,aef269f Updates to reduce Gas Fees when Minting Protons
+191-charged-particles-universe/contracts/tokens/Proton.sol,Proton,59,32593,61,32594,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/Universe.sol,Universe,57,32612,61,32613,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/aave/AaveSmartWallet.sol,AaveSmartWallet,51,32628,61,32629,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/aave/v2/AaveBridgeV2.sol,AaveBridgeV2,43,32656,61,32657,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/aave/v2/IATokenV2.sol,IATokenV2,13,32658,61,32659,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/aave/v2/ILendingPoolAddressesProviderV2.sol,ILendingPoolAddressesProviderV2,13,32660,61,32661,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/aave/v2/ILendingPoolV2.sol,ILendingPoolV2,13,32665,61,32666,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/generic/ERC20/GenericSmartWallet.sol,GenericSmartWallet,44,32670,61,32671,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+191-charged-particles-universe/contracts/yield/generic/ERC20/GenericWalletManager.sol,GenericWalletManager,55,32675,61,32676,"e7ef20f Rename Photon to WBoson, Rename Ion to Photon, clean-up for gas reductions, Add ability to Clear Timelocks, Fix for Deposit Cap per Asset, minor refactors"
+192-CheapNFT/src/SingleNFTFactory.sol,SingleNFTFactory,3,32699,8,32700,51338b9 down to 112k gas 🔥
+192-CheapNFT/src/SingleNFTFactory.sol,SingleNFTFactory,8,32700,9,32701,d6822d0 save 44 gas with specific function selector
+192-CheapNFT/src/SingleNFTFactory.sol,SingleNFTFactory,9,32701,10,32702,"1c81d19 add snapshot, save even more gas with better method name"
+192-CheapNFT/src/SingleNFT.sol,SingleNFT,3,32703,6,32704,357ec9e gas: save 20k gas by removing boolean check and using mapping
+192-CheapNFT/src/SingleNFT.sol,SingleNFT,6,32704,8,32705,51338b9 down to 112k gas 🔥
+192-CheapNFT/src/SingleNFT.sol,SingleNFT,8,32705,9,32706,d6822d0 save 44 gas with specific function selector
+192-CheapNFT/src/SingleNFT.sol,SingleNFT,9,32706,10,32707,"1c81d19 add snapshot, save even more gas with better method name"
+192-CheapNFT/src/test/SingleNFTFactory.t.sol,ExampleCloneFactoryTest,3,32711,6,32712,357ec9e gas: save 20k gas by removing boolean check and using mapping
+192-CheapNFT/src/test/SingleNFTFactory.t.sol,ExampleCloneFactoryTest,6,32712,8,32713,51338b9 down to 112k gas 🔥
+192-CheapNFT/src/test/SingleNFTFactory.t.sol,ExampleCloneFactoryTest,8,32713,9,32714,d6822d0 save 44 gas with specific function selector
+192-CheapNFT/src/test/SingleNFTFactory.t.sol,ExampleCloneFactoryTest,9,32714,10,32715,"1c81d19 add snapshot, save even more gas with better method name"
+200-valorem-options-contracts/src/OptionSettlement.sol,OptionSettlementEngine,16,33969,17,33970,040844d gas optimize option struct
+200-valorem-options-contracts/src/OptionSettlement.sol,OptionSettlementEngine,25,33976,26,33977,e260cbf Gas optimizations in storage structs
+200-valorem-options-contracts/src/OptionSettlement.sol,OptionSettlementEngine,26,33977,27,33978,17e677e Exercise Assignment and gas optimizations
+200-valorem-options-contracts/src/test/OptionSettlement.t.sol,OptionSettlementTest,14,33990,17,33991,040844d gas optimize option struct
+200-valorem-options-contracts/src/test/OptionSettlement.t.sol,OptionSettlementTest,25,33997,26,33998,e260cbf Gas optimizations in storage structs
+200-valorem-options-contracts/src/test/OptionSettlement.t.sol,OptionSettlementTest,26,33998,27,33999,17e677e Exercise Assignment and gas optimizations
+203-GoodContracts/contracts/dao/schemes/DeployForeignBridge.sol,DeployForeignBridge,232,34046,323,34047,d4c6207 add: optimize gas
+203-GoodContracts/contracts/dao/schemes/OneTimePayments.sol,OneTimePayments,133,34102,136,34103,17f3c37 add: gaslimit public and lte
+203-GoodContracts/stakingModel/contracts/ContributionCalculation.sol,ContributionCalculation,302,34359,323,34360,d4c6207 add: optimize gas
+203-GoodContracts/stakingModel/contracts/dao/schemes/FundManagerSetReserve.sol,FundManagerSetReserve,241,34362,323,34363,d4c6207 add: optimize gas
+203-GoodContracts/upgradables/contracts/invite/InvitesV1.sol,InvitesV1,436,34530,454,34531,ea41855 add: fix gas issues with invites
+204-sgn-v2-contracts/contracts/Bridge.sol,Bridge,80,34583,82,34584,a4f213f add gas limit (#68)
+204-sgn-v2-contracts/contracts/message/messagebus/MessageBus.sol,MessageBus,137,34760,144,34761,cbdd960 MessageSender charge gas fee (#97)
+204-sgn-v2-contracts/contracts/message/messagebus/MessageSender.sol,MessageSender,137,34769,144,34770,cbdd960 MessageSender charge gas fee (#97)
+204-sgn-v2-contracts/contracts/Pool.sol,Pool,79,34838,82,34839,a4f213f add gas limit (#68)
+204-sgn-v2-contracts/contracts/Signers.sol,Signers,54,34870,59,34871,"e3b557f cbr relay test, signer reset, gas benchmark (#52)"
+216-solidity-examples/contracts/OmniCounter.sol,OmniCounter,19,35366,39,35367,e7d694b GasIntenseLzReceive deploy a cnotract in lzReceive which consumes roughly 2m gas
+222-contract/contracts/logic/Verifier.sol,Verifier,21,35502,25,35503,fe9c86d Gas estimation via tx.origin bypass
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ResolverClient,61,35614,62,35643,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ResolverClient,62,35643,62,35614,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ResolverClient,62,35614,62,35643,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ContractResolver,51,35613,53,35640,82a9cd3 remove events (fix deployment gas issue)
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ContractResolver,61,35640,62,35642,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ContractResolver,62,35642,62,35640,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,ContractResolver,62,35640,62,35642,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoStructs,61,35654,62,35617,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoStructs,62,35617,62,35654,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoStructs,62,35654,62,35617,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoCommon,61,35655,62,35630,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoCommon,62,35630,62,35655,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoCommon,62,35655,62,35657,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoFundingManager,51,35638,62,35658,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,DaoVotingClaims,51,35637,53,35641,82a9cd3 remove events (fix deployment gas issue)
+223-dao-contracts/contract-full-sources/DaoContracts.sol,Dao,61,35656,62,35653,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contract-full-sources/DaoContracts.sol,Dao,62,35653,62,35656,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contracts/common/DaoCommon.sol,DaoCommon,19,35668,25,35669,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/common/DaoCommon.sol,DaoCommon,61,35655,62,35657,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contracts/common/DaoConstants.sol,DaoConstants,19,35679,25,35680,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/interactive/DaoFundingManager.sol,DaoFundingManager,47,35638,62,35658,a12b377 [9] refactor to fit 8mil gas limit
+223-dao-contracts/contracts/interactive/DaoRewardsManager.sol,DaoRewardsManager,19,35730,25,35731,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/interactive/Dao.sol,Dao,19,35739,25,35740,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/interactive/Dao.sol,Dao,37,35742,39,35743,"dd5b96e [25] function visibilities changed to external, to save gas costs (Resolves DGDG-146)"
+223-dao-contracts/contracts/interactive/Dao.sol,Dao,47,35746,48,35747,425501a [36] limit gas forwarded to 25k | fix based on cacp commit (Resolves DGDG-156)
+223-dao-contracts/contracts/interactive/DaoSpecialProposal.sol,DaoSpecialProposal,25,35750,39,35751,"dd5b96e [25] function visibilities changed to external, to save gas costs (Resolves DGDG-146)"
+223-dao-contracts/contracts/interactive/DaoSpecialVotingClaims.sol,DaoSpecialVotingClaims,19,35757,25,35758,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/interactive/DaoVotingClaims.sol,DaoVotingClaims,19,35776,25,35777,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/interactive/DaoVotingClaims.sol,DaoVotingClaims,49,35637,53,35641,82a9cd3 remove events (fix deployment gas issue)
+223-dao-contracts/contracts/interactive/DaoVoting.sol,DaoVoting,19,35785,25,35786,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/lib/DaoStructs.sol,DaoStructs,37,35797,39,35798,"dd5b96e [25] function visibilities changed to external, to save gas costs (Resolves DGDG-146)"
+223-dao-contracts/contracts/storage/DaoConfigsStorage.sol,DaoConfigsStorage,37,35869,39,35870,"dd5b96e [25] function visibilities changed to external, to save gas costs (Resolves DGDG-146)"
+223-dao-contracts/contracts/storage/DaoSpecialStorage.sol,DaoSpecialStorage,23,35612,25,35889,81ca684 split contracts to fit in 8 mil gas limit (Resolves DGDG-72) (#16)
+223-dao-contracts/contracts/storage/DaoSpecialStorage.sol,DaoSpecialStorage,37,35891,39,35625,"dd5b96e [25] function visibilities changed to external, to save gas costs (Resolves DGDG-146)"
+223-dao-contracts/contracts/storage/DaoStorage.sol,DaoStorage,37,35905,39,35906,"dd5b96e [25] function visibilities changed to external, to save gas costs (Resolves DGDG-146)"
+235-Fantom-DeFi/contracts/liquiditypool/LiquidityPool.sol,LiquidityPool,4,36405,5,36406,80af392 Update native tokens transfer to gas-safe code.
+240-idle-contracts/contracts/GST2Consumer.sol,GST2Consumer,121,36479,124,36480,cae5ca9 NEW: add rebalanceWithGST method for rebalancing using GasToken
+240-idle-contracts/contracts/GST2Consumer.sol,GST2Consumer,124,36480,132,36481,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/GST2Consumer.sol,GST2Consumer,132,36481,152,36482,fefd01d QSP-13: add a way to set gastoken contract params. (Commented a couple of methods of mocks contracts to avoid max contract size limit
+240-idle-contracts/contracts/IdleConverter.sol,IdleConverter,158,36499,164,36500,4309762 FIX: update IdleConverter to use gasToken and eventually Biconomy's metatx
+240-idle-contracts/contracts/IdlePriceCalculator.sol,IdlePriceCalculator,81,36531,154,36532,52fa826 FIX: mostly gas improvments after CDili review
+240-idle-contracts/contracts/IdleRebalancerV3.sol,IdleRebalancerV3,153,36567,154,36568,52fa826 FIX: mostly gas improvments after CDili review
+240-idle-contracts/contracts/IdleTokenV3.sol,IdleTokenV3,118,36600,124,36601,cae5ca9 NEW: add rebalanceWithGST method for rebalancing using GasToken
+240-idle-contracts/contracts/IdleTokenV3.sol,IdleTokenV3,131,36605,132,36606,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/IdleTokenV3.sol,IdleTokenV3,150,36613,152,36614,fefd01d QSP-13: add a way to set gastoken contract params. (Commented a couple of methods of mocks contracts to avoid max contract size limit
+240-idle-contracts/contracts/IdleTokenV3.sol,IdleTokenV3,153,36615,154,36616,52fa826 FIX: mostly gas improvments after CDili review
+240-idle-contracts/contracts/interfaces/GasToken.sol,GasToken,121,36640,132,36641,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/mocks/cDAIWrapperMock.sol,cDAIWrapperMock,113,36696,137,36697,c29d1d5 FIX: IdleTokenV3 tests after adding gastoken on mint
+240-idle-contracts/contracts/mocks/GST2ConsumerNoConst.sol,GST2ConsumerNoConst,137,36709,152,36710,fefd01d QSP-13: add a way to set gastoken contract params. (Commented a couple of methods of mocks contracts to avoid max contract size limit
+240-idle-contracts/contracts/mocks/iDAIWrapperMock.sol,iDAIWrapperMock,113,36725,137,36726,c29d1d5 FIX: IdleTokenV3 tests after adding gastoken on mint
+240-idle-contracts/contracts/mocks/IdleDyDxNoConst.sol,IdleDyDxNoConst,127,36730,132,36731,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/mocks/IdleFactoryV3Mock.sol,IdleFactoryV3Mock,130,36734,137,36735,c29d1d5 FIX: IdleTokenV3 tests after adding gastoken on mint
+240-idle-contracts/contracts/mocks/IdleRebalancerMock.sol,IdleRebalancerMock,66,36742,154,36743,52fa826 FIX: mostly gas improvments after CDili review
+240-idle-contracts/contracts/mocks/IdleTokenV3Mock.sol,IdleTokenV3Mock,118,36747,137,36748,c29d1d5 FIX: IdleTokenV3 tests after adding gastoken on mint
+240-idle-contracts/contracts/mocks/IdleTokenV3NoGSTConst.sol,IdleTokenV3NoGSTConst,153,36754,154,36755,52fa826 FIX: mostly gas improvments after CDili review
+240-idle-contracts/contracts/mocks/IdleTokenWithPublicRebalanceCheck.sol,IdleTokenWithPublicRebalanceCheck,81,36760,154,36761,52fa826 FIX: mostly gas improvments after CDili review
+240-idle-contracts/contracts/mocks/yxTokenMock.sol,yxTokenMock,127,36774,132,36775,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/mocks/yxTokenNoConst.sol,yxTokenNoConst,127,36777,132,36778,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/wrappers/IdleDyDx.sol,IdleDyDx,127,36818,132,36819,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+240-idle-contracts/contracts/wrappers/yxToken.sol,yxToken,127,36852,132,36853,f2fe0a0 NEW: mintIdleToken can now use Gastokens if present in the contract. Instantiate dydx instance only once for IdleDyDx and yxToken
+244-synapse-contracts/contracts/synapse/SynapseBridge.sol,SynapseBridge,111,37332,123,37333,eb25d7d Merge pull request #16 from synapsecns/gas
+245-pyrrha-consensus/contracts/Pandora.sol,Pandora,61,37663,67,37664,d7a9c5f Factories for creating cognitive jobs and worker nodes This allowed to reduce the gas consumption for contracts to be deployed within 4.7m gas limit in Ropsten testnet
+245-pyrrha-consensus/test/TestPandora.sol,TestPandora,61,37735,67,37736,d7a9c5f Factories for creating cognitive jobs and worker nodes This allowed to reduce the gas consumption for contracts to be deployed within 4.7m gas limit in Ropsten testnet
+249-smart-contracts/contracts/math/SafeMath.sol,SafeMath,311,774,392,33032,1d2d18f9 Small gas improvement in SafeMath.sol (#811)
+249-smart-contracts/contracts/math/SafeMath.sol,SafeMath,392,33032,407,4311,c63b203c Small SafeMath.sol gas improvements (add & mul). (#894)
+249-smart-contracts/contracts/mocks/ERC721FullMock.sol,ERC721FullMock,709,38265,717,38266,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/mocks/ERC721Mock.sol,ERC721Mock,713,38281,717,38282,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/mocks/ERC721TokenMock.sol,ERC721TokenMock,426,38302,486,38303,6bd8842a removed and tested unecessary gas cost (#1017)
+249-smart-contracts/contracts/ownership/Ownable.sol,Ownable,889,31227,929,4445,6f8e672f Gas optimizations in Ownable and Secondary contracts #1905 (#1910)
+249-smart-contracts/contracts/ownership/Secondary.sol,Secondary,889,38494,929,26393,6f8e672f Gas optimizations in Ownable and Secondary contracts #1905 (#1910)
+249-smart-contracts/contracts/payment/escrow/Escrow.sol,Escrow,729,38510,975,26395,d6e10ab7 Forward all gas on PullPayment withdrawal (#1976)
+249-smart-contracts/contracts/payment/PullPayment.sol,PullPayment,729,38535,975,38536,d6e10ab7 Forward all gas on PullPayment withdrawal (#1976)
+249-smart-contracts/contracts/payment/PullPayment.sol,PullPayment,975,38536,976,26398,76a1d7a3 make PullPayment.withdrawPaymentsWithGas external
+249-smart-contracts/contracts/ReentrancyGuard.sol,ReentrancyGuard,324,16582,500,38591,1200969e Refactor/reentrancy guard gas optimization #1056 (#1057)
+249-smart-contracts/contracts/ReentrancyGuard.sol,ReentrancyGuard,500,38591,520,38592,31ac59b2 reentrancy mutex gas optimization (#1155)
+249-smart-contracts/contracts/token/ERC20/BasicToken.sol,BasicToken,412,4312,483,38737,1ecda544 Input check sequence modification for gas efficiency (#1043)
+249-smart-contracts/contracts/token/ERC20/StandardToken.sol,StandardToken,454,33662,483,38804,1ecda544 Input check sequence modification for gas efficiency (#1043)
+249-smart-contracts/contracts/token/ERC721/ERC721Enumerable.sol,ERC721Enumerable,711,38841,717,38842,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/token/ERC721/ERC721.sol,ERC721,713,38867,717,38868,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/token/ERC721/ERC721Token.sol,ERC721Token,471,38882,486,38883,6bd8842a removed and tested unecessary gas cost (#1017)
+249-smart-contracts/contracts/utils/Address.sol,Address,837,38985,848,38986,0282c360 Using extcodehash instead of extcodesize for less gas (#1802)
+249-smart-contracts/contracts/utils/Address.sol,Address,1156,1912,1174,1543,c801c8d2 feat: use extcodesize for isContract to reduce gas (#2311)
+249-smart-contracts/contracts/utils/Create2.sol,Create2,1089,38991,1134,38992,d418da6b Decrease CREATE2 address computation gas usage from 623 to 539 (#2244)
+249-smart-contracts/contracts/utils/EnumerableMap.sol,EnumerableMap,1285,1813,1309,23289,e66e3ca5 Improve gas efficiency of EnumerableMap (#2518)
+249-smart-contracts/contracts/utils/ReentrancyGuard.sol,ReentrancyGuard,996,39000,1002,10042,28b95ef5 ReentrancyGuard gas optimization (#1996)
+253-defi777-contracts/contracts/farming/FarmerToken.sol,FarmerToken,86,39129,87,39130,dbf0e5b Gas improvments for yield transfers
+253-defi777-contracts/contracts/farming/FarmerToken.sol,FarmerToken,87,39130,94,39131,1b77ad1 Improve gas efficency for FarmerToken constructor
+253-defi777-contracts/contracts/farming/IFarmerToken.sol,IFarmerToken,86,39138,87,39139,dbf0e5b Gas improvments for yield transfers
+253-defi777-contracts/contracts/farming/YieldAdapter.sol,YieldAdapter,86,39149,87,39150,dbf0e5b Gas improvments for yield transfers
+253-defi777-contracts/contracts/protocols/balancer/BalancerPoolExit.sol,BalancerPoolExit,78,39215,87,39216,dbf0e5b Gas improvments for yield transfers
+253-defi777-contracts/contracts/protocols/balancer/BalancerPoolExit.sol,BalancerPoolExit,87,39216,106,39217,a86d3b6 Balancer gas efficency using Gulp
+253-defi777-contracts/contracts/protocols/balancer/BalancerPool.sol,BalancerPool,71,39223,106,39224,a86d3b6 Balancer gas efficency using Gulp
+253-defi777-contracts/contracts/protocols/curve/CurveExitAdapter.sol,CurveExitAdapter,86,39256,87,39257,dbf0e5b Gas improvments for yield transfers
+253-defi777-contracts/contracts/protocols/uniswap/UniswapAdapter.sol,UniswapAdapter,103,39323,104,39324,9a224ed Gas improvment on Uniswap swaps
+253-defi777-contracts/contracts/protocols/uniswap/UniswapWrapper.sol,UniswapWrapper,46,39351,53,39352,f834e89 Gas improvments for uniswap
+262-pendle-core/contracts/core/abstract/PendleForgeBase.sol,PendleForgeBase,104,62683,107,62684,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/abstract/PendleLiquidityMiningBase.sol,PendleLiquidityMiningBase,104,62701,105,62702,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/abstract/PendleLiquidityMiningBase.sol,PendleLiquidityMiningBase,105,62702,107,62703,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/abstract/PendleMarketBase.sol,PendleMarketBase,104,62722,105,62723,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/abstract/PendleMarketBase.sol,PendleMarketBase,106,62724,107,62725,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/abstract/PendleMarketFactoryBase.sol,PendleMarketFactoryBase,104,62747,107,62748,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/BenchmarkData.sol,BenchmarkData,18,62780,21,62781,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/core/BenchmarkFactory.sol,BenchmarkFactory,20,62792,21,62793,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/core/BenchmarkForge.sol,BenchmarkForge,18,62799,21,62800,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,104,62878,105,62879,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,105,62879,107,62880,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleAaveV2Forge.sol,PendleAaveV2Forge,104,62911,107,62912,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleCompoundForge.sol,PendleCompoundForge,104,62935,107,62936,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleData.sol,PendleData,97,62973,105,62974,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleData.sol,PendleData,105,62974,107,62975,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleLpHolder.sol,PendleLpHolder,89,63004,105,63005,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleMarketReader.sol,PendleMarketReader,97,63018,105,63019,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleMarketReader.sol,PendleMarketReader,105,63019,107,63020,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,103,63082,105,63083,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,106,63084,107,63085,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/core/PendleTokenDistribution.sol,PendleTokenDistribution,100,63110,107,63111,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/interfaces/IBenchmarkData.sol,IBenchmarkData,18,63143,21,63144,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/interfaces/IBenchmarkFactory.sol,IBenchmarkFactory,18,63153,21,63154,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/interfaces/IPendleData.sol,IPendleData,92,63228,105,63229,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/interfaces/IPendleData.sol,IPendleData,105,63229,107,63230,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/interfaces/IPendleMarket.sol,IPendleMarket,104,63299,105,63300,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/interfaces/IPendleMarket.sol,IPendleMarket,106,63301,107,63302,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/interfaces/IPendleRouter.sol,IPendleRouter,106,63341,107,63342,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/interfaces/IPendleTokenDistribution.sol,IPendleTokenDistribution,100,63361,107,63362,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/mock/MockGovernance.sol,MockGovernance,16,62638,21,63475,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/mock/MockMathLibrary.sol,MockMathLibrary,85,63480,107,63481,a3dbaef Merge pull request #120 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/periphery/PendleNonReentrant.sol,PendleNonReentrant,103,63517,105,63518,8493847 Merge pull request #118 from benchmark-finance/further-gas-optimize
+262-pendle-core/contracts/tokens/BenchmarkOwnershipToken.sol,BenchmarkOwnershipToken,19,62664,21,63552,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+262-pendle-core/contracts/tokens/BMK.sol,BMK,19,63557,21,63558,db9724c use underlyingAsset as identifier; fixed compile errors; fixed tests
+263-contracts-v2/contracts/DrainController.sol,DrainController,1,63688,3,63689,f8be046 Improve gas refund logic for DrainController
+263-contracts-v2/contracts/DrainController.sol,DrainController,11,63691,18,63692,debe1d3 Split drain distribution out of drain controller to optimize gas
+263-contracts-v2/contracts/DrainDistributor.sol,DrainDistributor,13,63708,18,63709,debe1d3 Split drain distribution out of drain controller to optimize gas
+292-blindboxes-contracts/contracts/NFTMaster.sol,NFTMaster,8,64826,9,64827,4e745ca Optimizes gas cost in fulfillRandomness.
+296-radicle-drips-hub/PoolTest.sol,ReceiverWeightsTest,11,23386,13,23387,251f76d Improve gas usage logging in weight list tests
+302-MyBit-Network.tech/Contracts/contracts/MarketPlace.sol,MarketPlace,69,65713,114,65715,5350c49 Changed Marketplace to reduce gas.
+302-MyBit-Network.tech/Contracts/contracts/TokenStaking.sol,TokenStaking,100,65785,114,65786,5350c49 Changed Marketplace to reduce gas.
+302-MyBit-Network.tech/Contracts/contracts/UserAccess.sol,UserAccess,107,65788,114,65789,5350c49 Changed Marketplace to reduce gas.
+316-contracts/src/core/ElasticDAO.sol,ElasticDAO,75,66862,83,66863,887405c update for loops to save on gas
+316-contracts/src/libraries/ElasticMath.sol,ElasticMath,85,66904,105,66905,7df80f6 updates div to not pass message for gas savings (#46)
+316-contracts/src/libraries/SafeMath.sol,SafeMath,78,66912,105,66913,7df80f6 updates div to not pass message for gas savings (#46)
+316-contracts/src/models/DAO.sol,DAO,59,66930,83,66931,887405c update for loops to save on gas
+321-solmate-merkle-drop/src/ERC721MerkleDrop.sol,ERC721MerkleDrop,2,129080,3,129081,c4747ea minor gas savings and readme
+321-solmate-merkle-drop/src/ERC721MerkleDrop.sol,ERC721MerkleDrop,6,129083,7,129084,349de5d drop safemint to save gas
+335-solidity-playground/CoinFlipper/contracts/BlockDecidingCoinFlipper.sol,BlockDecidingCoinFlipper,10,129686,12,129687,4658cc4 Enabled use of Oraclize to get random response. Tested on Rinkeby. Slightly refactored contracts to abstract transferWinningFunds function. Added gas estimates for deployment. Updated Web3Utils.js with more useful functions.
+335-solidity-playground/CoinFlipper/contracts/CoinFlipper.sol,CoinFlipper,10,129690,12,129691,4658cc4 Enabled use of Oraclize to get random response. Tested on Rinkeby. Slightly refactored contracts to abstract transferWinningFunds function. Added gas estimates for deployment. Updated Web3Utils.js with more useful functions.
+335-solidity-playground/CoinFlipper/contracts/OracleDecidingCoinFlipper.sol,OracleDecidingCoinFlipper,10,129692,12,129693,4658cc4 Enabled use of Oraclize to get random response. Tested on Rinkeby. Slightly refactored contracts to abstract transferWinningFunds function. Added gas estimates for deployment. Updated Web3Utils.js with more useful functions.
+349-spartanswap-contracts/contracts/Router.sol,Router,62,130432,63,130433,2296f97  removed Dividend gas saver
+361-hector-contracts/LpBondHelper.sol,LpBondHelper,58,131034,59,131035,"d4b393b keep the dust,save gas"
+380-milky-way/contracts/CurveBondedToken.sol,CurveBondedToken,13,25267,15,25268,e37a16e extract MaxGasPrice.sol and fix test
+381-realitio-contracts/truffle/contracts/SplitterWallet.sol,SplitterWallet,49,131835,51,131836,"bd65641 Add some asserts to make sure we never allocate more money than we have, add a max recipients check to avoid gas exhaustion"
+402-account-contracts/contracts/account/AccountGasAbstract.sol,AccountGasAbstract,66,132643,79,132644,c3f7779 use limited gas
+402-account-contracts/contracts/account/AccountGasAbstract.sol,AccountGasAbstract,86,132645,94,132646,6109c54 move payGasRelayer function
+402-account-contracts/contracts/account/AccountGasAbstract.sol,AccountGasAbstract,94,132646,102,132647,2fc29a4 simplify gasrelay gas abstraction meta transaction
+402-account-contracts/contracts/account/AccountGasAbstract.sol,AccountGasAbstract,111,132648,112,132649,52b67f7 move erc191 to gasrelay
+402-account-contracts/contracts/account/Account.sol,Account,70,132652,78,132653,"b66c4d0 proper returns, allow limited gas calls"
+402-account-contracts/contracts/cryptography/ECDSA.sol,ECDSA,60,132742,89,132743,9b658b9 optimize gas
+402-account-contracts/contracts/cryptography/MerkleMultiProof.sol,MerkleMultiProof,146,132751,147,132752,d8f7943 invert flag to reduce gas
+402-account-contracts/contracts/cryptography/MerkleMultiProof.sol,MerkleMultiProof,147,132752,149,132753,485c2c2 reduce gas costs
+402-account-contracts/contracts/cryptography/MerkleMultiProof.sol,MerkleMultiProof,149,132753,150,132754,91f35fa reduce gas cost
+402-account-contracts/contracts/cryptography/MerkleMultiProofWrapper.sol,MerkleMultiProofWrapper,148,132758,150,132759,91f35fa reduce gas cost
+402-account-contracts/contracts/gasrelay/GasRelay.sol,GasRelay,86,132765,94,132766,6109c54 move payGasRelayer function
+402-account-contracts/contracts/gasrelay/GasRelay.sol,GasRelay,94,132766,102,132767,2fc29a4 simplify gasrelay gas abstraction meta transaction
+402-account-contracts/contracts/gasrelay/GasRelay.sol,GasRelay,111,132768,112,132769,52b67f7 move erc191 to gasrelay
+402-account-contracts/contracts/gasrelay/GasRelay.sol,GasRelay,112,132769,120,132770,ea5a508 update gas relay interface
+427-smart-contracts/contracts/MasterChef.sol,MasterChef,40,104,55,105,2818564 Merge pull request #3 from jishankai/optimize_gas
+429-contracts/contracts/core.sol,Core,74,133438,75,133439,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/IConverter.sol,IConverter,73,133443,75,133444,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/IExternalPlatform.sol,IExternalPlatform,71,133448,75,133449,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/staking/IStaking1.sol,IStaking1,71,133460,75,133461,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/staking/IStaking2.sol,IStaking2,71,133462,75,133463,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/staking/IStaking3.sol,IStaking3,71,133464,75,133465,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/staking/ITier2Staking.sol,ITier2Staking,71,133467,75,133468,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/interfaces/staking/ITokenRewards.sol,ITokenRewards,71,133469,75,133470,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/LP2LP.sol,LP2LP,74,133483,75,133484,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/proxyLib/OwnableProxied.sol,OwnableProxied,68,133515,75,133516,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/proxyLib/OwnableProxy.sol,OwnableProxy,71,133518,75,133519,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/proxyLib/Ownable.sol,Ownable,71,133521,75,133522,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/proxyLib/OwnableUpgradeable.sol,OwnableUpgradeable,68,133523,75,133524,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/tokenrewards.sol,TokenRewards,74,133573,75,133574,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+429-contracts/contracts/utils/Adminable.sol,Adminable,71,133575,75,133576,1d2e4c9 gas optimizations and more contracts cleanup (#44)
+435-ton-eth-bridge-token-contracts/free-ton/contracts/examples/interfaces/IEvent.sol,IEvent,7,133746,11,133747,33d65ce Merge branch 'tmp_gas_fixes' into 'master'
+435-ton-eth-bridge-token-contracts/free-ton/contracts/examples/utils/ErrorCodes.sol,ErrorCodes,7,133754,11,133755,33d65ce Merge branch 'tmp_gas_fixes' into 'master'
+435-ton-eth-bridge-token-contracts/free-ton/contracts/interfaces/IRootTokenContract.sol,IRootTokenContract,9,133776,10,133777,c7f488b Merge branch 'gas_fixes' into 'master'
+435-ton-eth-bridge-token-contracts/free-ton/contracts/interfaces/IRootTokenContract.sol,IRootTokenContract,10,133777,11,133778,33d65ce Merge branch 'tmp_gas_fixes' into 'master'
+435-ton-eth-bridge-token-contracts/free-ton/contracts/interfaces/ITONTokenWallet.sol,ITONTokenWallet,9,133792,10,133793,c7f488b Merge branch 'gas_fixes' into 'master'
+435-ton-eth-bridge-token-contracts/free-ton/contracts/interfaces/ITONTokenWallet.sol,ITONTokenWallet,10,133793,11,133792,33d65ce Merge branch 'tmp_gas_fixes' into 'master'
+454-mix-item-store/abstract_blobstore.sol,AbstractBlobStore,148,134440,151,134441,0961862 Put flag constants in separate contract. Reduce gas usage.
+454-mix-item-store/blobstore.sol,BlobStore,46,134462,50,134463,a83fb01 Add BlobState. Do proper gas estimation.
+454-mix-item-store/blobstore.sol,BlobStore,53,134466,56,134467,dddaf67 Put the block number at the end of the id instead of the beginning. Reduce gas usage by 13 per blob store.
+454-mix-item-store/blobstore.sol,BlobStore,132,134477,136,134478,e999c66 Use less gas.
+454-mix-item-store/blobstore.sol,BlobStore,150,134486,151,134487,0961862 Put flag constants in separate contract. Reduce gas usage.
+454-mix-item-store/blobstore_test.sol,BlobStoreTest,131,134499,136,134500,e999c66 Use less gas.
+454-mix-item-store/blobstore_test.sol,BlobStoreTest,148,134501,151,134502,0961862 Put flag constants in separate contract. Reduce gas usage.
+454-mix-item-store/src/item_store_interface.sol,ItemStoreInterface,264,134526,280,134527,c2d106d Always use full-width types to minimize gas use.
+454-mix-item-store/src/item_store_interface.sol,ItemStoreInterface,289,134532,291,134533,b80a6b1 Improve correctness of variable size without increasing gas cost much.
+454-mix-item-store/src/item_store_ipfs_sha256_proxy.sol,ItemStoreIpfsSha256Proxy,268,134548,280,134549,c2d106d Always use full-width types to minimize gas use.
+454-mix-item-store/src/item_store_ipfs_sha256_proxy.sol,ItemStoreIpfsSha256Proxy,289,134554,291,134555,b80a6b1 Improve correctness of variable size without increasing gas cost much.
+454-mix-item-store/src/item_store_ipfs_sha256.sol,ItemStoreIpfsSha256,270,134576,275,134577,00cdf2a Make create() use less gas.
+454-mix-item-store/src/item_store_ipfs_sha256.sol,ItemStoreIpfsSha256,277,134579,280,134580,c2d106d Always use full-width types to minimize gas use.
+454-mix-item-store/src/item_store_ipfs_sha256.sol,ItemStoreIpfsSha256,289,134587,291,134588,b80a6b1 Improve correctness of variable size without increasing gas cost much.
+454-mix-item-store/src/item_store_ipfs_sha256.sol,ItemStoreIpfsSha256,344,134605,347,134606,ab104b1 Reduce gas usage.
+454-mix-item-store/src/item_store_ipfs_sha256_test.sol,ItemStoreIpfsSha256Test,274,134616,275,134617,00cdf2a Make create() use less gas.
+454-mix-item-store/src/item_store_ipfs_sha256_test.sol,ItemStoreIpfsSha256Test,276,134618,280,134619,c2d106d Always use full-width types to minimize gas use.
+454-mix-item-store/src/item_store_registry.sol,ItemStoreRegistry,258,134635,280,134636,c2d106d Always use full-width types to minimize gas use.
+454-mix-item-store/src/item_store_registry.sol,ItemStoreRegistry,286,134638,291,134639,b80a6b1 Improve correctness of variable size without increasing gas cost much.
+466-StakingContract/src/StakingContractMainnet.sol,StakingContractMainnet,9,134837,10,134838,d22cd6b for loop gas optimisation
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,95,135064,96,135065,007c717 optimize gas by tracking contributions through events
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,96,135065,97,135066,b2205c0 optimize gas by tracking withdrawals through events
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,162,135088,164,135089,3311cbf refactor(arbitrable-proxy): gas optimizations
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,166,135090,169,135091,cb6679a refactor(arbitrable-proxy): gas optimizations from Federicos review
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,169,135091,171,135092,8649b00 refactor(arbitrable-proxy): use DisputeStruct param to save gas
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,171,135092,172,135093,cd8eeb2 refactor(arbitrable-proxy): reduce gas usage in fundAppeal by intermediate var
+476-arbitrable-proxy-contracts/contracts/AutoAppealableArbitrator.sol,AutoAppealableArbitrator,132,135116,164,135117,3311cbf refactor(arbitrable-proxy): gas optimizations
+476-arbitrable-proxy-contracts/contracts/BinaryArbitrableProxy.sol,BinaryArbitrableProxy,87,135164,89,135165,17b7ebd refactor(bap): gas optimizations
+476-arbitrable-proxy-contracts/contracts/BinaryArbitrableProxy.sol,BinaryArbitrableProxy,132,135167,164,135168,3311cbf refactor(arbitrable-proxy): gas optimizations
+476-arbitrable-proxy-contracts/contracts/IDisputeResolver.sol,IDisputeResolver,157,135181,164,135182,3311cbf refactor(arbitrable-proxy): gas optimizations
+476-arbitrable-proxy-contracts/contracts/Migrations.sol,Migrations,2,4579,164,34252,3311cbf refactor(arbitrable-proxy): gas optimizations
+476-arbitrable-proxy-contracts/contracts/RealitioProxyWithAppeals.sol,RealitioArbitratorProxyWithAppeals,157,135194,164,135195,3311cbf refactor(arbitrable-proxy): gas optimizations
+476-arbitrable-proxy-contracts/contracts/test/RealitioMock.sol,RealitioMock,143,135203,164,135204,3311cbf refactor(arbitrable-proxy): gas optimizations
+487-sense-v1/pkg/core/src/adapters/BaseAdapter.sol,BaseAdapter,137,135424,143,135425,76c5178 ENG-352 Gas Optimizations Suggested by Kurt's Report (#98)
+487-sense-v1/pkg/core/src/adapters/BaseAdapter.sol,BaseAdapter,273,135437,278,135438,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/adapters/BaseFactory.sol,BaseFactory,277,135449,278,135450,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/adapters/compound/CAdapter.sol,CAdapter,273,135472,278,135473,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/adapters/CropAdapter.sol,CropAdapter,77,135495,143,135496,76c5178 ENG-352 Gas Optimizations Suggested by Kurt's Report (#98)
+487-sense-v1/pkg/core/src/adapters/CropAdapter.sol,CropAdapter,241,135502,278,135503,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/adapters/lido/WstETHAdapter.sol,WstETHAdapter,273,135525,278,135526,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/Divider.sol,Divider,116,135550,143,135551,76c5178 ENG-352 Gas Optimizations Suggested by Kurt's Report (#98)
+487-sense-v1/pkg/core/src/Divider.sol,Divider,277,135585,278,135586,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/Divider.sol,TokenHandler,72,135538,143,135552,76c5178 ENG-352 Gas Optimizations Suggested by Kurt's Report (#98)
+487-sense-v1/pkg/core/src/external/balancer/Pool.sol,BalancerPool,111,135601,278,135602,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/Periphery.sol,Periphery,137,135652,143,135653,76c5178 ENG-352 Gas Optimizations Suggested by Kurt's Report (#98)
+487-sense-v1/pkg/core/src/Periphery.sol,Periphery,277,135674,278,135675,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/Adapter.t.sol,FakeAdapter,232,135702,278,135705,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/BaseFactory.t.sol,Factories,277,135717,278,135718,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/CFactory.tm.sol,CFactories,259,135754,278,135755,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/Divider.t.sol,Dividers,257,135794,278,135795,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/test-helpers/mocks/MockAdapter.sol,MockAdapter,266,135933,278,135934,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/test-helpers/mocks/MockAdapter.sol,MockBaseAdapter,257,135932,278,135935,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tests/test-helpers/mocks/MockSpace.sol,MockSpacePool,137,135948,278,135952,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/core/src/tokens/Claim.sol,Claim,261,136055,278,136056,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/fuse/src/external/BalancerOracle.sol,BalancerOracle,253,136063,278,136064,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/fuse/src/oracles/Zero.sol,ZeroOracle,253,136105,278,136106,9d33697 gas optimizations – spearbit (#178)
+487-sense-v1/pkg/utils/src/libs/Levels.sol,Levels,216,136228,278,136229,9d33697 gas optimizations – spearbit (#178)
+492-contracts/contracts/farm/ISolarERC20.sol,ISolarERC20,1,136665,16,136666,8682c73 gas-swap & sdov2 update
+492-contracts/contracts/farm/v2/SolarDistributorV2.sol,SolarDistributorV2,15,136691,16,136692,8682c73 gas-swap & sdov2 update
+492-contracts/contracts/mock/MockERC20.sol,MockERC20,4,136703,16,136704,8682c73 gas-swap & sdov2 update
+492-contracts/contracts/uniswapv2/SolarERC20.sol,SolarERC20,1,136728,16,136729,8682c73 gas-swap & sdov2 update
+499-gelato-core-contracts/contracts/gelato_core/GelatoCore.sol,GelatoCore,2,136884,42,136885,ef4858a new GelatoCore without tx.gasprice >= gelatoGasPrice
+513-contracts/contracts/IDen3Impl.sol,IDen3Impl,7,137411,8,137412,3b8ed15 gas analisys
+513-contracts/contracts/lib/IDen3lib.sol,IDen3lib,7,137436,8,137437,3b8ed15 gas analisys
+513-contracts/contracts/test/IDen3libHelper.sol,IDen3libHelper,4,137459,8,137460,3b8ed15 gas analisys
+513-contracts/contracts/test/TargetHelper.sol,TargetHelper,4,137464,8,137465,3b8ed15 gas analisys

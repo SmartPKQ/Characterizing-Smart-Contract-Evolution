@@ -1,0 +1,582 @@
+001-sushiswap/contracts/MasterChef.sol,MasterChef,25,100,36,101,3ccb11d Add events and fix emergency withdraw bug
+004-echidna/solidity/cli.sol,Test,16,752,30,753,917ae45 simple bugfixes
+005-erc721/contracts/tokens/NFTokenEnumerable.sol,NFTokenEnumerable,59,829,66,830,3825504 Merge pull request #109 from lknix/fix_id_to_index_bug
+009-v2-periphery/contracts/ExampleOracleSimple.sol,ExampleOracleSimple,46,1069,54,1070,3563d08 fix ExampleOracleSimple counterfactual accumulation bug
+009-v2-periphery/contracts/UniswapV2Migrator.sol,UniswapV2Migrator,16,1211,19,1212,7f3502c fix up bugs
+009-v2-periphery/contracts/UniswapV2Router.sol,UniswapV2Router,18,1243,19,1244,7f3502c fix up bugs
+015-yearn-protocol/contracts/strategies/StrategyDForceUSDC.sol,StrategyDForceUSDC,10,3770,21,3771,43c1b00 bug: StrategyDForceUSDC missing `getName`
+015-yearn-protocol/contracts/vaults/yDelegatedVault.sol,yDelegatedVault,6,3810,22,3811,a09899d bug: yDelegatedVault missing `setGovernance`
+016-SWC-registry/test_cases/invalid_constructor_name/incorrect_constructor_name3.sol,Missing,69,3986,108,3987,52a2122 bug fix linenumber for unchecked return values
+016-SWC-registry/test_cases/solidity/call_best_practices/unchecked_return_value/unchecked_return_value.sol,ReturnValue,177,3945,180,4023,85e8706 Make a vulnerable test case actually exploitable. (#169)
+022-erc-1155/contracts/ERC1155NonFungible.sol,ERC1155NonFungible,13,4502,17,4503,47187cd bugfix for non-fungible implementation
+022-erc-1155/contracts/ERC1155NonFungible.sol,ERC1155NonFungible,18,4504,22,4505,"de9aa5a starting unit tests, bugfixes"
+028-contracts/contracts/DexRNG.sol,DexRNG,164,5438,190,5439,abbb014 Added openPack test; fixed bugs
+028-contracts/contracts/Handler.sol,Handler,239,5583,240,5584,e1fff1e Contracts compile; bug fixes
+028-contracts/contracts/interfaces/RNGInterface.sol,RNGInterface,152,5737,190,5738,abbb014 Added openPack test; fixed bugs
+028-contracts/contracts/lazy_mint/ERC1155/LazyMintERC1155.sol,LazyMintERC1155,642,5790,645,5791,39e0c78 Merge pull request #91 from nftlabs/currency-transfer-silly-bug
+028-contracts/contracts/lazy_mint/ERC721/LazyMintERC721.sol,LazyMintERC721,642,5831,645,5832,39e0c78 Merge pull request #91 from nftlabs/currency-transfer-silly-bug
+028-contracts/contracts/marketplace/Marketplace.sol,Marketplace,613,5887,628,5888,954f690 Merge pull request #73 from nftlabs/marketplace-acceptOffer-bug
+028-contracts/contracts/marketplace/Marketplace.sol,Marketplace,629,5889,633,5890,00befb9 Merge pull request #79 from nftlabs/marketplace-closeAuction-bug
+028-contracts/contracts/marketplace/Marketplace.sol,Marketplace,642,5891,643,5892,8cd6bbb Merge pull request #87 from nftlabs/closeAuction-bug-fix
+028-contracts/contracts/marketplace/Marketplace.sol,Marketplace,643,5892,645,5893,39e0c78 Merge pull request #91 from nftlabs/currency-transfer-silly-bug
+028-contracts/contracts/Market.sol,Market,239,5942,240,5943,e1fff1e Contracts compile; bug fixes
+028-contracts/contracts/Market.sol,Market,420,5975,426,5976,ceb1e89 Fix msg.sender bug in market and redeploy
+028-contracts/contracts/Market.sol,Market,482,5986,483,5987,62e58bf Fix interface bug
+028-contracts/contracts/Market.sol,Market,485,5988,489,5989,17b047c Fix critical pack vulnerability
+028-contracts/contracts/NFT.sol,NFT,484,6059,489,6060,17b047c Fix critical pack vulnerability
+028-contracts/contracts/PackControl.sol,PackControl,178,6119,180,6120,11fd15f Fixed bugs post PackControl test
+028-contracts/contracts/PackControl.sol,PackControl,180,6120,187,6121,bf74083 Fixed bugs post createPack test for PackHandler.sol
+028-contracts/contracts/PackERC1155.sol,PackERC1155,173,6136,187,6137,bf74083 Fixed bugs post createPack test for PackHandler.sol
+028-contracts/contracts/PackERC1155.sol,PackERC1155,187,6137,194,6138,8bb87ab Fixed bugs post openPack testing
+028-contracts/contracts/PackHandler.sol,PackHandler,182,6146,190,6147,abbb014 Added openPack test; fixed bugs
+028-contracts/contracts/PackHandler.sol,PackHandler,190,6147,194,6148,8bb87ab Fixed bugs post openPack testing
+028-contracts/contracts/Pack.sol,Pack,253,6227,254,6228,070ae9d Bug fixes post deploy test
+028-contracts/contracts/Pack.sol,Pack,463,6266,489,6267,17b047c Fix critical pack vulnerability
+028-contracts/contracts/products/AccessPacks.sol,AccessPacks,252,6332,254,6333,070ae9d Bug fixes post deploy test
+028-contracts/contracts/ProtocolControl.sol,ProtocolControl,571,6369,637,6370,4aa7477 Merge pull request #82 from nftlabs/protocolControl-withdrawFunds-bug
+028-contracts/contracts/signature_mint/ERC721/SignatureMint721.sol,SignatureMint721,642,6450,645,6451,39e0c78 Merge pull request #91 from nftlabs/currency-transfer-silly-bug
+033-contracts/contracts/core/Module.sol,Module,74,7015,82,7016,"df14943 Bugfix, fix a confirmation num bug"
+033-contracts/contracts/core/Module.sol,Module,131,7021,133,7022,"49f6649 Bugfix, fix a typo in writing status in contract Module"
+033-contracts/contracts/modules/Payroll.sol,Payroll,99,7116,135,7117,"a7f6041 Bugfix, fix a typo in contract Payroll"
+033-contracts/contracts/modules/Payroll.sol,Payroll,135,7117,138,7118,"b489eeb Bugfix, fix a init array error"
+034-smartbugs/dataset/bad_randomness/blackjack.sol,BlackJack,1,7137,3,7138,fd1a917 Merge pull request #2 from smartbugs/develop
+035-kleros/contracts/kleros/KlerosLiquid.sol,KlerosLiquid,178,7358,179,7359,b9927f4 fix(kleros-liquid): execute bug
+035-kleros/contracts/kleros/KlerosLiquid.sol,KlerosLiquid,196,7366,197,7367,dfaa56b fix(kleros-liquid): latest review vulnerabilities
+035-kleros/contracts/KlerosPOC.sol,KlerosPOC,58,7418,59,7419,3a4ac5d Merge pull request #20 from kleros/bugfix_multiple_shot_token_repartition
+035-kleros/contracts/Kleros.sol,Kleros,96,7432,97,7433,4162c9e Fix underflow vulnerability
+037-SmartDev-Contract/contracts/data_structure/LibAddressSet.sol,LibAddressSet,6,7578,10,7579,5f0be3f bug fix: LibAddressSet remove: error index (#3)
+040-contracts/contracts/optimistic-ethereum/iOVM/verification/iOVM_BondManager.sol,Errors,22,7750,62,7752,af37313 Bond Manager Deposit bugfix (#64)
+040-contracts/contracts/optimistic-ethereum/iOVM/verification/iOVM_BondManager.sol,iOVM_BondManager,22,7751,62,7753,af37313 Bond Manager Deposit bugfix (#64)
+040-contracts/contracts/optimistic-ethereum/libraries/trie/Lib_MerkleTrie.sol,Lib_MerkleTrie,13,7815,75,7816,37b51cf Audit/oz m05 merkletrie bug 193 (#102)
+040-contracts/contracts/optimistic-ethereum/libraries/utils/Lib_BytesUtils.sol,Lib_BytesUtils,44,7827,60,7828,6712904 critical bounds bug (#82)
+040-contracts/contracts/optimistic-ethereum/libraries/utils/Lib_BytesUtils.sol,Lib_BytesUtils,107,7831,123,7832,4e115b6 fix tainted memory bug in `Lib_BytesUtils.slice` (#171)
+040-contracts/contracts/optimistic-ethereum/OVM/execution/OVM_ExecutionManager.sol,OVM_ExecutionManager,5,8023,6,8024,ae11bd4 Fixed a bug in getting ETH address
+040-contracts/contracts/optimistic-ethereum/OVM/verification/OVM_BondManager.sol,OVM_BondManager,37,8090,62,8091,af37313 Bond Manager Deposit bugfix (#64)
+040-contracts/contracts/optimistic-ethereum/OVM/verification/OVM_FraudVerifier.sol,OVM_FraudVerifier,58,8104,62,8105,af37313 Bond Manager Deposit bugfix (#64)
+040-contracts/contracts/test-helpers/Mock_FraudVerifier.sol,Mock_FraudVerifier,22,8160,62,8161,af37313 Bond Manager Deposit bugfix (#64)
+040-contracts/contracts/test-libraries/rlp/TestLib_RLPWriter.sol,TestLib_RLPWriter,111,8175,123,8176,4e115b6 fix tainted memory bug in `Lib_BytesUtils.slice` (#171)
+040-contracts/contracts/test-libraries/utils/TestLib_BytesUtils.sol,TestLib_BytesUtils,9,8182,123,8183,4e115b6 fix tainted memory bug in `Lib_BytesUtils.slice` (#171)
+042-contractsV2/contracts/connectors/LoanToken/AdvancedTokenStorage.sol,AdvancedTokenStorage,6,8254,29,8252,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/connectors/LoanToken/LoanTokenBase.sol,LoanTokenBase,6,8268,29,8263,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/connectors/LoanToken/LoanTokenLogicDai.sol,LoanTokenLogicDai,11,8281,29,8269,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/connectors/loantoken/LoanTokenLogicStandard.sol,LoanTokenLogicStandard,103,8291,114,8292,862d44a bug fix
+042-contractsV2/contracts/connectors/LoanToken/LoanTokenLogicStandard.sol,LoanTokenLogicStandard,27,8309,29,8282,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/connectors/LoanToken/LoanTokenLogicWeth.sol,LoanTokenLogicWeth,11,8318,29,8311,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/connectors/LoanToken/LoanTokenSettingsLowerAdmin.sol,LoanTokenSettingsLowerAdmin,10,8326,29,8319,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/connectors/LoanToken/LoanToken.sol,LoanToken,6,8333,29,8331,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/core/Constants.sol,Constants,1,8345,29,8346,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/core/State.sol,State,24,8372,29,8373,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/events/LoanClosingsEvents.sol,LoanClosingsEvents,28,8385,29,8386,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/events/LoanOpeningsEvents.sol,LoanOpeningsEvents,28,8402,29,8403,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/events/LoanSettingsEvents.sol,LoanSettingsEvents,10,8407,29,8408,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/events/ProtocolSettingsEvents.sol,ProtocolSettingsEvents,13,8413,29,8414,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/feeds/IPriceFeeds.sol,IPriceFeeds,11,8519,29,8520,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/feeds/PriceFeeds.sol,PriceFeeds,11,8532,29,8533,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/feeds/testnet/PriceFeedsLocal.sol,PriceFeedsLocal,6,8545,29,8546,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/feeds/testnet/PriceFeedsTestnets.sol,PriceFeedsTestnets,18,8555,29,8556,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/governance/GovernorBravoDelegate.sol,GovernorBravoDelegate,322,8564,323,8565,800ac10 bug fixes
+042-contractsV2/contracts/mixins/FeesHelper.sol,FeesHelper,13,8627,29,8628,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/mixins/InterestUser.sol,InterestUser,13,8646,29,8647,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/mixins/LiquidationHelper.sol,LiquidationHelper,6,8653,29,8654,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/mixins/LiquidationHelper.sol,LiquidationHelper,29,8654,36,8655,a383a6e bug fix
+042-contractsV2/contracts/mixins/LiquidationHelper.sol,LiquidationHelper,36,8655,38,8656,3725e1a Bug fix for liquidations when margin is very low
+042-contractsV2/contracts/modules/LoanClosings.sol,LoanClosings,28,8711,29,8712,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/modules/LoanClosings.sol,LoanClosings,31,8713,39,8714,f10e182 Bug fix for liquidations when margin is very low
+042-contractsV2/contracts/modules/LoanMaintenance.sol,LoanMaintenance,17,8749,29,8750,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/modules/LoanOpenings.sol,LoanOpenings,28,8774,29,8775,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/modules/LoanSettings.sol,LoanSettings,10,8788,29,8789,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/modules/ProtocolSettings.sol,ProtocolSettings,13,8811,29,8812,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/modules/SwapsExternal.sol,SwapsExternal,17,8817,29,8818,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/openzeppelin/Ownable.sol,Ownable,1,4445,29,8828,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/staking/StakingState.sol,StakingState,169,8930,185,8931,bb80789 bug fixes
+042-contractsV2/contracts/staking/StakingV1.sol,StakingV1,178,8976,185,8977,bb80789 bug fixes
+042-contractsV2/contracts/swaps/connectors/SwapsImplKyber.sol,SwapsImplKyber,17,9016,29,9017,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/contracts/swaps/SwapsUser.sol,SwapsUser,17,9049,29,9050,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+042-contractsV2/interfaces/IBZx.sol,IBZx,13,9083,29,9084,437fbfd Improved fees and rewards logic; Added ChiToken support; Many other refactorings and bug fixes
+046-learn-solidity-with-examples/contracts/current/cointoss.sol,cointoss,19,9697,20,9698,7a82a62 fixed cointoss hash compare bug
+060-oneswap_contract_ethereum/contracts/interfaces/IOneSwapGov.sol,IOneSwapGov,2,11432,8,11433,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/interfaces/IOneSwapPair.sol,IOneSwapPool,2,11437,8,11440,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/interfaces/IOneSwapPair.sol,IOneSwapPair,2,11438,8,11441,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/libraries/DecFloat32.sol,DecFloat32,2,11449,8,11450,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/libraries/ProxyData.sol,ProxyData,7,11451,8,11452,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapGov.sol,OneSwapGov,2,11467,8,11468,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapPair.sol,OneSwapERC20,5,11479,8,11483,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapPair.sol,OneSwapPool,5,11480,8,11484,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapPair.sol,OneSwapPair,6,11482,8,11485,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapRouter.sol,OneSwapRouter,7,11493,8,11494,bc4234c Fix bugs and reduce gas
+060-oneswap_contract_ethereum/contracts/OneSwapToken.sol,OneSwapToken,7,11496,8,11497,bc4234c Fix bugs and reduce gas
+064-DeFiOptions-core/contracts/pools/LinearLiquidityPool.sol,LinearLiquidityPool,77,12328,79,12329,e70c030 Fixing bug in Liquidity Pool when buying options with token that doesn't use 18 decimals
+064-DeFiOptions-core/contracts/pools/LinearLiquidityPool.sol,LinearLiquidityPool,98,12341,99,12342,a166d53 Fixing bug in pool yield calculation due to token decimal conversion
+065-land/contracts/land/LANDRegistry.sol,LANDRegistry,100,12690,113,12691,8e87fc3 fix: land estate bug (#93)
+067-contracts/contracts/TokenSale.sol,TokenSale,45,13109,46,13110,8d1dee5 fix bug
+069-dodo-smart-contract/contracts/token/DODOMine.sol,DODOMine,75,13266,77,13267,ff6dfdd Merge pull request #4 from DODOEX/bug-fix
+073-contractV2/contracts/token/DODOMine.sol,DODOMine,75,13266,77,13267,ff6dfdd Merge pull request #4 from DODOEX/bug-fix
+075-Avastars-Contracts/contracts/AvastarMetadata.sol,AvastarMetadata,194,14302,223,14303,9323cdf Fix Metadata contract bug
+075-Avastars-Contracts/flat/AvastarMetadata.flat.sol,AvastarMetadata,194,14302,223,14303,9323cdf Fix Metadata contract bug
+077-geb/src/multi/MultiGlobalSettlement.sol,SAFEEngineLike,233,14912,234,14915,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiGlobalSettlement.sol,MultiGlobalSettlement,233,14914,234,14916,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiGlobalSettlement.sol,MultiGlobalSettlement,234,14916,235,14917,4251dcf Debug stack too deep
+077-geb/src/multi/MultiIncreasingDiscountCollateralAuctionHouse.sol,MultiIncreasingDiscountCollateralAuctionHouse,233,14920,235,14921,4251dcf Debug stack too deep
+077-geb/src/multi/MultiLiquidationEngine.sol,CollateralAuctionHouseLike,229,14922,234,14928,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiLiquidationEngine.sol,SAFESaviourLike,229,14923,234,14929,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiLiquidationEngine.sol,LiquidationPoolLike,229,14924,234,14930,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiLiquidationEngine.sol,SAFEEngineLike,229,14925,234,14931,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiLiquidationEngine.sol,MultiLiquidationEngine,229,14927,234,14932,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiLiquidationEngine.sol,MultiLiquidationEngine,234,14932,235,14933,4251dcf Debug stack too deep
+077-geb/src/multi/MultiSAFEEngine.sol,MultiSAFEEngine,229,14936,234,14937,3e85d13 Start to fix bugs
+077-geb/src/multi/MultiSAFEEngine.sol,MultiSAFEEngine,234,14937,235,14938,4251dcf Debug stack too deep
+077-geb/src/shared/BasicTokenAdapters.sol,MultiSAFEEngineLike,229,15021,234,15023,3e85d13 Start to fix bugs
+077-geb/src/StabilityFeeTreasury.sol,StabilityFeeTreasury,201,15074,214,15031,aa7a1f6 Fixed cosmetic bug in treasury
+080-joe-core/contracts/StableJoeStaking.sol,StableJoeStaking,264,15836,322,15837,4d4e5ca Immunefi bug 6188 (#107)
+083-cryptofin-solidity/contracts/rationals/RationalMath.sol,RationalMath,14,15961,23,15962,b443d3f Fix bug in rational comparison functions
+085-kleros-interaction/contracts/standard/arbitration/Esperanto.sol,Esperanto,521,16145,523,16146,18a6efa fix(Esperanto): fixed the bug with appeal period + refactor
+091-smart-contracts/contracts/CommitReveal.sol,CommitReveal,30,18161,31,18162,b3cd237 bugfix
+091-smart-contracts/contracts/DOSAddressBridge.sol,DOSAddressBridge,100,18180,116,18181,cf5bc0e fix node stop and uptime bug
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,30,18243,31,18244,b3cd237 bugfix
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,35,18250,36,18251,f9da770 bugfix
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,36,18251,37,18252,b70a8cc beta (6/n) linkedlist bugfix
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,46,18260,47,18261,47c2c00 fixing bug of updating tail of the linkedlist
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,80,18288,81,18289,ebc4cec Unregister refactoring without breaking change; minor bug fixes; event name refinement.
+091-smart-contracts/contracts/DOSProxy.sol,DOSProxy,123,18302,132,18303,f66540e bugfix
+091-smart-contracts/contracts/Staking.sol,Staking,115,18391,116,18392,cf5bc0e fix node stop and uptime bug
+098-gearbox-contracts/contracts/adapters/UniswapV3.sol,UniswapV3Adapter,16,19255,17,19256,7e83001 uniswapV3 bug fixed
+098-gearbox-contracts/contracts/credit/CreditManager.sol,CreditManager,9,19370,10,19371,f3201a0 force bug fixed
+101-HackSmartContract/contracts/SolidityHackingWorkshopV8.sol,GuessTheAverage,34,19652,39,19653,c973bb3 fix (unintended bug)
+102-contracts/contracts/lib/RLPReader.sol,RLPReader,35,19726,41,19727,09a7399 Merge pull request #19 from QEDK/bugfix
+105-smart-contracts/snowflake/contracts/resolvers/ClientRaindrop/ClientRaindrop.sol,ClientRaindrop,109,19841,118,19842,4c21b0d code fixes and bugs
+105-smart-contracts/snowflake/contracts/Snowflake.sol,Snowflake,94,19929,95,19930,b53b6fa add explanations to require statements fix address registration bug fix signup ordering
+105-smart-contracts/snowflake/contracts/Snowflake.sol,Snowflake,104,19939,106,19943,"1872725 clean up snowflake, some bug fixes"
+105-smart-contracts/snowflake/contracts/Snowflake.sol,Snowflake,109,19946,118,19948,4c21b0d code fixes and bugs
+105-smart-contracts/snowflake/contracts/Snowflake.sol,SnowflakeResolver,101,19934,106,19940,"1872725 clean up snowflake, some bug fixes"
+105-smart-contracts/snowflake/contracts/Snowflake.sol,ViaContract,104,19938,106,19941,"1872725 clean up snowflake, some bug fixes"
+105-smart-contracts/snowflake/contracts/Snowflake.sol,IdentityRegistryInterface,109,19944,118,19947,4c21b0d code fixes and bugs
+105-smart-contracts/snowflake/contracts/SnowflakeVia.sol,ViaContract,109,19960,118,19962,4c21b0d code fixes and bugs
+105-smart-contracts/snowflake/contracts/SnowflakeVia.sol,SnowflakeVia,109,19961,118,19963,4c21b0d code fixes and bugs
+105-smart-contracts/snowflake-poc/contracts/Snowflake.sol,Snowflake,66,20017,67,20018,44fff5e quick bug fixes
+108-smart-contract/contracts/bridges/LiquidityContract.sol,CTokenInterface,237,20185,246,20198,888a1e3 code refactoring & bug fixes
+108-smart-contract/contracts/bridges/LiquidityContract.sol,CETHInterface,237,20186,246,20199,888a1e3 code refactoring & bug fixes
+108-smart-contract/contracts/bridges/LiquidityContract.sol,ProvideLiquidity,237,20189,246,20200,888a1e3 code refactoring & bug fixes
+108-smart-contract/contracts/bridges/LiquidityContract.sol,ProvideLiquidity,246,20200,248,20203,10c518c code refactoring & bugs fixing
+108-smart-contract/contracts/bridges/LiquidityContract.sol,AccessLiquidity,244,20196,246,20201,888a1e3 code refactoring & bug fixes
+108-smart-contract/contracts/bridges/LiquidityContract.sol,AccessLiquidity,246,20201,248,20204,10c518c code refactoring & bugs fixing
+108-smart-contract/contracts/bridges/LiquidityContract.sol,AdminStuff,244,20197,246,20202,888a1e3 code refactoring & bug fixes
+108-smart-contract/contracts/bridges/LiquidityContract.sol,AdminStuff,246,20202,248,20205,10c518c code refactoring & bugs fixing
+108-smart-contract/contracts/bridges/MakerCompound.sol,Helper,151,20231,161,20239,c9acfc0 transfer DAI user wallet bug
+108-smart-contract/contracts/bridges/MakerCompound.sol,Bridge,152,20234,153,20235,9f0d48e transferFrom bug fix
+108-smart-contract/contracts/bridges/MakerCompound.sol,Bridge,159,20236,161,20240,c9acfc0 transfer DAI user wallet bug
+108-smart-contract/contracts/bridges/MakerCompound.sol,Bridge,183,20283,186,20288,e016eef bugs fixing
+108-smart-contract/contracts/bridges/MakerCompound.sol,MakerCompBridge,159,20237,160,20238,1971321 bugs fixing
+108-smart-contract/contracts/bridges/MakerCompound.sol,MakerCompBridge,160,20238,164,20242,75c7f60 bug fix
+108-smart-contract/contracts/bridges/MakerCompound.sol,MakerResolver,182,20279,186,20285,e016eef bugs fixing
+108-smart-contract/contracts/bridges/MakerCompound.sol,CompoundResolver,183,20282,186,20284,e016eef bugs fixing
+108-smart-contract/contracts/bridges/MakerCompound.sol,BridgeResolver,178,20273,186,20286,e016eef bugs fixing
+108-smart-contract/contracts/bridges/MakerCompound.sol,LiquidityProvider,178,20274,186,20287,e016eef bugs fixing
+108-smart-contract/contracts/ProxyLogics/import/InstaCompImport.sol,CTokenInterface,282,20334,284,20341,a782d0d code refactrinig & small bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaCompImport.sol,CETHInterface,281,20096,284,20342,a782d0d code refactrinig & small bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaCompImport.sol,ComptrollerInterface,283,20338,284,20343,a782d0d code refactrinig & small bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaCompImport.sol,DSMath,281,20134,284,20345,a782d0d code refactrinig & small bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaCompImport.sol,Helpers,283,20339,284,20346,a782d0d code refactrinig & small bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaCompImport.sol,ImportResolver,283,20340,284,20347,a782d0d code refactrinig & small bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaDydxImport.sol,SoloMarginContract,370,20358,371,20365,1ec9051 dydx import fixed bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaDydxImport.sol,Helpers,370,20360,371,20366,1ec9051 dydx import fixed bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaDydxImport.sol,ImportHelper,370,20362,371,20367,1ec9051 dydx import fixed bugs
+108-smart-contract/contracts/ProxyLogics/import/InstaDydxImport.sol,ImportResolver,370,20363,371,20368,1ec9051 dydx import fixed bugs
+108-smart-contract/contracts/ProxyLogics/InstaBridge.sol,Helper,159,20408,160,20396,1971321 bugs fixing
+108-smart-contract/contracts/ProxyLogics/InstaBridge.sol,MakerHelper,159,20409,160,20410,1971321 bugs fixing
+108-smart-contract/contracts/ProxyLogics/InstaBridge.sol,CompoundHelper,158,20405,160,20411,1971321 bugs fixing
+108-smart-contract/contracts/ProxyLogics/InstaBridge.sol,Bridge,158,20406,160,20413,1971321 bugs fixing
+108-smart-contract/contracts/ProxyLogics/InstaBridge.sol,Bridge,180,20421,186,20423,e016eef bugs fixing
+108-smart-contract/contracts/ProxyLogics/InstaCompMigrate.sol,PoolActions,296,20427,359,20450,9c2e06b Code refactor and bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompMigrate.sol,MigrationProxyActions,329,20447,359,20451,9c2e06b Code refactor and bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompMigrate.sol,CompoundResolver,308,20441,359,20452,9c2e06b Code refactor and bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompMigrate.sol,CompMigration,329,20448,359,20453,9c2e06b Code refactor and bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompMigrate.sol,InstaMcdAddress,329,20445,359,20449,9c2e06b Code refactor and bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompound.sol,Helpers,135,20455,144,20463,98b9a64 enter market bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompound.sol,CompoundResolver,140,20459,141,20460,28060ab bug fixing
+108-smart-contract/contracts/ProxyLogics/InstaCompound.sol,CompoundResolver,141,20460,142,20461,a392dfc contract bug fixing
+108-smart-contract/contracts/ProxyLogics/InstaCompound.sol,CompoundResolver,142,20461,143,20462,aa06ba9 bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompound.sol,CompoundResolver,143,20462,144,20464,98b9a64 enter market bug fix
+108-smart-contract/contracts/ProxyLogics/InstaCompound.sol,CompoundResolver,286,20467,288,20469,6672664 bug fix on payback behalf
+108-smart-contract/contracts/ProxyLogics/instaDydx.sol,Helpers,274,20510,275,20512,3b86bf9 code refactoring and minor bugs
+108-smart-contract/contracts/ProxyLogics/instaDydx.sol,DydxResolver,274,20511,275,20513,3b86bf9 code refactoring and minor bugs
+108-smart-contract/contracts/ProxyLogics/InstaKyber.sol,Helper,39,20523,41,20525,fa844cc Fixed manage allowance bug.
+108-smart-contract/contracts/ProxyLogics/InstaKyber.sol,Swap,36,20522,41,20519,fa844cc Fixed manage allowance bug.
+108-smart-contract/contracts/ProxyLogics/InstaMakerCompBridge.sol,CompoundResolver,245,20568,257,20573,02aef68 small bug on get function
+108-smart-contract/contracts/ProxyLogics/InstaSave.sol,GetDetails,198,20685,199,20686,c11b590 small bug
+108-smart-contract/contracts/ProxyLogics/InstaSave.sol,GetDetails,199,20686,200,20687,2b06bcc small bug
+108-smart-contract/contracts/ProxyLogics/InstaSave.sol,GetDetails,200,20687,201,20688,fffdf35 bugs resolved
+108-smart-contract/contracts/ProxyLogics/InstaSave.sol,SaveResolver,196,20682,202,20689,dd62faa bugs resolved
+108-smart-contract/contracts/ProxyLogics/MCD/InstaCompMcdMigrate.sol,Helpers,328,20742,344,20747,6a68147 minor bug fixed
+108-smart-contract/contracts/ProxyLogics/MCD/InstaCompMcdMigrate.sol,CompoundResolver,323,20735,344,20748,6a68147 minor bug fixed
+108-smart-contract/contracts/ProxyLogics/MCD/InstaCompMcdMigrate.sol,CompMcdResolver,328,20744,332,20745,8cd3790 one small bug resolved
+108-smart-contract/contracts/ProxyLogics/MCD/InstaCompMcdMigrate.sol,BridgeResolver,323,20738,344,20749,6a68147 minor bug fixed
+108-smart-contract/contracts/ProxyLogics/MCD/InstaCompMcdMigrate.sol,InstaMcdAddress,328,20445,344,20746,6a68147 minor bug fixed
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,UniswapExchange,297,20092,298,20161,8dffe62 added mkr swap and fixed few bugs in migrate.
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,Helpers,297,20762,298,20767,8dffe62 added mkr swap and fixed few bugs in migrate.
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,Helpers,326,20793,333,20796,b845460 few minor bugs & edits
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,SCDResolver,297,20763,298,20768,8dffe62 added mkr swap and fixed few bugs in migrate.
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,SCDResolver,316,20791,333,20798,b845460 few minor bugs & edits
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,SCDResolver,336,20801,339,20804,fa6295d Fixed bugs and code refactor
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MCDResolver,297,20764,298,20770,8dffe62 added mkr swap and fixed few bugs in migrate.
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MCDResolver,336,20802,347,20812,0daea98 fixed mkr bug
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MigrateResolver,297,20765,298,20771,8dffe62 added mkr swap and fixed few bugs in migrate.
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MigrateResolver,326,20795,339,20806,fa6295d Fixed bugs and code refactor
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MKRSwapper,315,20786,333,20797,b845460 few minor bugs & edits
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MKRSwapper,342,20809,343,20810,a385485 fixed bugs
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MKRSwapper,343,20810,346,20811,65641f2 bug fixed in mcd migrate
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MKRSwapper,346,20811,355,20815,759a19e fixed cdp to vault oasis bug
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MigrateHelper,316,20792,339,20805,fa6295d Fixed bugs and code refactor
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MigrateHelper,339,20805,341,20808,cc2fd9b Fixed a bug
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MigrateHelper,341,20808,348,20813,5dc98ff Fixed mcd migration bug
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,MigrateHelper,349,20814,355,20816,759a19e fixed cdp to vault oasis bug
+108-smart-contract/contracts/ProxyLogics/MCD/InstaMcdMigrate.sol,InstaMcdAddress,326,20445,339,20803,fa6295d Fixed bugs and code refactor
+108-smart-contract/contracts/ProxyLogics/SplitSwap/SplitSwap.sol,AdminStuffs,225,20896,258,20863,6daab57 resolved small bug in Split Swap
+108-smart-contract/contracts/ProxyLogics/SplitSwap/SplitSwap.sol,SplitResolver,204,20871,206,20875,4853653 bug resolved
+108-smart-contract/contracts/ProxyLogics/SplitSwap/SplitSwap.sol,SplitResolver,207,20877,210,20884,c964ff4 bug resolved
+108-smart-contract/contracts/ProxyLogics/SplitSwap/SplitSwap.sol,SplitResolver,213,20885,216,20888,c76cb12 Split Swap bug resolved
+108-smart-contract/contracts/ProxyLogics/SplitSwap/SplitSwap.sol,SplitHelper,208,20879,210,20883,c964ff4 bug resolved
+108-smart-contract/contracts/Registry.sol,WalletRegistry,29,20056,40,20954,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/Registry.sol,InstaRegistry,29,20057,40,20955,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/UserWallet.sol,AddressRegistryInterface,27,20970,40,20059,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/UserWallet.sol,AddressRecord,27,20971,40,20060,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/UserWallet.sol,UserAuth,27,20972,40,20061,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/UserWallet.sol,UserGuardian,27,20973,40,20980,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/UserWallet.sol,UserManager,29,20976,40,20981,60f6639 Fixed bug in isExecutable() & build() on deploy
+108-smart-contract/contracts/UserWallet.sol,InstaWallet,39,20979,40,20982,60f6639 Fixed bug in isExecutable() & build() on deploy
+110-exchange-wrappers/contracts/exchange-wrappers/OasisV3MatchingExchangeWrapper.sol,OasisV3MatchingExchangeWrapper,20,21024,22,21025,7772331 0.2.3 Fix rounding bug in OasisV3Matching (#15)
+116-Artion-Contracts/contracts/FantomAuction.sol,FantomAuction,52,21193,53,21194,3e664db Merge pull request #8 from Fantom-foundation/bug-fixes
+118-beefy-contracts/contracts/BIFI/keepers/contracts/BeefyHarvester.sol,BeefyHarvester,329,21739,330,21740,61e548e Harvester bug fixes (#143)
+118-beefy-contracts/contracts/BIFI/keepers/interfaces/IBeefyHarvester.sol,IBeefyHarvester,329,21749,330,21750,61e548e Harvester bug fixes (#143)
+118-beefy-contracts/contracts/BIFI/keepers/libraries/UpkeepLibrary.sol,UpkeepLibrary,329,21759,330,21760,61e548e Harvester bug fixes (#143)
+119-88mph-contracts/contracts/DInterest.sol,DInterest,69,22570,71,22571,"a0fb594 Implement funding interest distribution, fix principalPerToken for large withdrawals, fix minor math bugs"
+119-88mph-contracts/contracts/fractionals/ZeroCouponBond.sol,ZeroCouponBond,66,22670,71,22671,"a0fb594 Implement funding interest distribution, fix principalPerToken for large withdrawals, fix minor math bugs"
+119-88mph-contracts/contracts/zaps/ZapCurve.sol,ZapCurve,66,23053,71,23054,"a0fb594 Implement funding interest distribution, fix principalPerToken for large withdrawals, fix minor math bugs"
+131-loan/contracts/Refinancer.sol,Refinancer,122,24287,127,24288,34942e7 fix: Fix decreasePrincipal bug (#153)
+131-loan/contracts/test/Refinancer.t.sol,RefinancePrincipalRequestedTest,124,24738,127,24742,34942e7 fix: Fix decreasePrincipal bug (#153)
+132-nftx-protocol-v2/contracts/solidity/NFTXSimpleFeeDistributor.sol,NFTXSimpleFeeDistributor,52,24854,55,24855,cd66a33 Fix math bug
+132-nftx-protocol-v2/contracts/solidity/NFTXStakingZap.sol,NFTXStakingZap,81,24882,86,24883,e6f1759 Fix xtoken not deploying for 1155 bug
+137-raiden-contracts/raiden_contracts/data/source/raiden/TokenNetwork.sol,TokenNetwork,677,25831,678,25832,a60646a Remove debug outputs
+139-contracts/contracts/CashMarket.sol,CashMarket,3,25950,5,25951,f8d6118 Merge branch 'bugfix/batch-operations'
+139-contracts/contracts/ERC1155Trade.sol,ERC1155Trade,2,25953,5,25954,f8d6118 Merge branch 'bugfix/batch-operations'
+139-contracts/contracts/ERC1155Trade.sol,ERC1155Trade,5,25954,7,25955,57a802c Merge pull request #4 from notional-finance/bugfix/escrow-liquidation
+139-contracts/contracts/Escrow.sol,Escrow,2,25956,7,25957,57a802c Merge pull request #4 from notional-finance/bugfix/escrow-liquidation
+139-contracts/contracts/interface/IPortfoliosCallable.sol,IPortfoliosCallable,2,25961,7,25962,57a802c Merge pull request #4 from notional-finance/bugfix/escrow-liquidation
+139-contracts/contracts/Portfolios.sol,Portfolios,2,25969,7,25970,57a802c Merge pull request #4 from notional-finance/bugfix/escrow-liquidation
+139-contracts/contracts/utils/Liquidation.sol,Liquidation,2,25992,7,25993,57a802c Merge pull request #4 from notional-finance/bugfix/escrow-liquidation
+139-contracts/contracts/utils/MockLiquidation.sol,MockLiquidation,2,25994,7,25996,57a802c Merge pull request #4 from notional-finance/bugfix/escrow-liquidation
+142-T-REX/contracts/identity/ERC735.sol,ERC735,1,26466,61,26467,864d808 Removed bugs
+151-sol-temple/src/test/ERC721.t.sol,ERC721Test,39,26779,48,26780,c3fbb07 fix: fixed burning supply not decreasing bug
+151-sol-temple/src/test/ERC721Upgradable.t.sol,ERC721UpgradableTest,44,26784,48,26785,c3fbb07 fix: fixed burning supply not decreasing bug
+151-sol-temple/src/tokens/ERC721.sol,ERC721,46,26867,48,26868,c3fbb07 fix: fixed burning supply not decreasing bug
+151-sol-temple/src/tokens/ERC721Upgradable.sol,ERC721Upgradable,43,26875,48,26876,c3fbb07 fix: fixed burning supply not decreasing bug
+152-InstaContract/contracts/v2/InstaBank.sol,GlobalVar,51,26980,54,27116,0b5f247 Fixed a non-vulnerable bug. Every code has bug. Remember.
+152-InstaContract/contracts/v2/InstaBank.sol,IssueLoan,51,26985,54,27117,0b5f247 Fixed a non-vulnerable bug. Every code has bug. Remember.
+154-govblocks-protocol/contracts/GBTStandardToken.sol,GBTStandardToken,816,27327,818,27328,c2837ae resolved bugs in previous commit
+154-govblocks-protocol/contracts/GovBlocksMaster.sol,GovBlocksMaster,696,27387,698,27388,45f0d8a Auth changes for debugging
+154-govblocks-protocol/contracts/GovBlocksMaster.sol,GovBlocksMaster,766,27398,767,27399,21ccc60 Minor bug fixes
+154-govblocks-protocol/contracts/GovernanceData.sol,GovernanceData,761,27598,762,27599,db3786e Minor bug fix
+154-govblocks-protocol/contracts/GovernanceData.sol,GovernanceData,784,27605,787,27606,53dceef Minor bug fixes and optimizations
+154-govblocks-protocol/contracts/GovernanceData.sol,GovernanceData,837,27617,841,27618,ec979f1 added minimum voting weight and resolved minor bug in member roles
+154-govblocks-protocol/contracts/Governance.sol,Governance,593,27695,596,27696,570f015 Fixed bugs in governance
+154-govblocks-protocol/contracts/Governance.sol,Governance,596,27696,597,27697,62aa0c9 Fixed bugs in governance
+154-govblocks-protocol/contracts/Governance.sol,Governance,770,27726,781,27727,a988182 Categorize bug fix and cosmetic changes
+154-govblocks-protocol/contracts/Governance.sol,Governance,785,27730,787,27731,53dceef Minor bug fixes and optimizations
+154-govblocks-protocol/contracts/Governance.sol,Governance,816,27738,818,27739,c2837ae resolved bugs in previous commit
+154-govblocks-protocol/contracts/Governance.sol,Governance,823,27742,824,27743,ce03771 resolved minor bug while adding solution and updated test cases
+154-govblocks-protocol/contracts/Governance.sol,Governance,901,27774,902,27775,d5107ee resolved minor bugs and removed un unnecessary files
+154-govblocks-protocol/contracts/Governance.sol,Governance,902,27775,904,27776,4da60c8 resolved minor bugs
+154-govblocks-protocol/contracts/imports/govern/Governed.sol,Governed,896,27811,902,27813,d5107ee resolved minor bugs and removed un unnecessary files
+154-govblocks-protocol/contracts/imports/govern/Governed.sol,IMaster,896,27810,902,27812,d5107ee resolved minor bugs and removed un unnecessary files
+154-govblocks-protocol/contracts/Master.sol,Master,696,27921,698,27922,45f0d8a Auth changes for debugging
+154-govblocks-protocol/contracts/Master.sol,Master,698,27922,699,27923,f685f80 Auth changes for debugging
+154-govblocks-protocol/contracts/Master.sol,Master,750,27937,767,27938,21ccc60 Minor bug fixes
+154-govblocks-protocol/contracts/Master.sol,Master,795,27942,796,27943,5a71dd4 Master bug fix and test cases added
+154-govblocks-protocol/contracts/Master.sol,Master,901,27950,904,27951,4da60c8 resolved minor bugs
+154-govblocks-protocol/contracts/MemberRoles.sol,MemberRoles,817,28021,818,28022,c2837ae resolved bugs in previous commit
+154-govblocks-protocol/contracts/MemberRoles.sol,MemberRoles,834,28025,841,28026,ec979f1 added minimum voting weight and resolved minor bug in member roles
+154-govblocks-protocol/contracts/MemberRoles.sol,MemberRoles,841,28026,842,28027,c2ca92f resolved minor bug while adding a new member role
+154-govblocks-protocol/contracts/MemberRoles.sol,MemberRoles,883,28032,885,28033,b542ba0 resolved bug while returning member address array
+154-govblocks-protocol/contracts/MemberRoles.sol,MemberRoles,898,28038,902,28039,d5107ee resolved minor bugs and removed un unnecessary files
+154-govblocks-protocol/contracts/ProposalCategoryAdder.sol,ProposalCategoryAdder,777,28116,781,28117,a988182 Categorize bug fix and cosmetic changes
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,592,28179,596,28180,570f015 Fixed bugs in governance
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,770,28212,781,28213,a988182 Categorize bug fix and cosmetic changes
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,795,28215,796,28216,5a71dd4 Master bug fix and test cases added
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,839,28226,841,28227,ec979f1 added minimum voting weight and resolved minor bug in member roles
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,901,28236,902,28237,d5107ee resolved minor bugs and removed un unnecessary files
+154-govblocks-protocol/contracts/ProposalCategory.sol,ProposalCategory,902,28237,904,28238,4da60c8 resolved minor bugs
+154-govblocks-protocol/contracts/SimpleVoting.sol,SimpleVoting,761,28410,762,28411,db3786e Minor bug fix
+154-govblocks-protocol/contracts/SimpleVoting.sol,SimpleVoting,799,28423,803,28424,4106cba Voting claim reward bug fix
+154-govblocks-protocol/contracts/SimpleVoting.sol,SimpleVoting,817,28426,824,28427,ce03771 resolved minor bug while adding solution and updated test cases
+154-govblocks-protocol/contracts/SimpleVoting.sol,SimpleVoting,840,28433,841,28434,ec979f1 added minimum voting weight and resolved minor bug in member roles
+155-Nix/contracts/Nix.sol,Owned,99,28614,122,28642,c183c68 Bug fixed in Owned
+174-belt-contract/contracts/bsc/earnV2/defi/ellipsis.sol,StableSwap,36,31249,37,31252,fee85da ellipsis exploitable bug fix
+174-belt-contract/contracts/bsc/earnV2/strategies/ellipsis/StrategyEllipsisImpl.sol,StrategyEllipsisImpl,36,31279,37,31280,fee85da ellipsis exploitable bug fix
+174-belt-contract/contracts/earnV2/strategies/StrategyACrypto.sol,StrategyACrypto,30,31410,31,31411,5942ba3 fix : fix bug in strategy deposit/withdraw
+174-belt-contract/contracts/earnV2/strategies/StrategyAlpaca.sol,StrategyAlpaca,30,31413,31,31414,5942ba3 fix : fix bug in strategy deposit/withdraw
+174-belt-contract/contracts/earnV2/strategies/StrategyFortube.sol,StrategyFortube,30,31423,31,31424,5942ba3 fix : fix bug in strategy deposit/withdraw
+174-belt-contract/contracts/earnV2/strategies/Strategy.sol,Strategy,29,31426,31,31427,5942ba3 fix : fix bug in strategy deposit/withdraw
+174-belt-contract/contracts/earnV2/tokens/MultiStrategyToken.sol,MultiStrategyToken,30,31432,31,31433,5942ba3 fix : fix bug in strategy deposit/withdraw
+174-belt-contract/contracts/earnV2/tokens/SingleStrategyToken2.sol,SingleStrategyToken2,29,31435,31,31436,5942ba3 fix : fix bug in strategy deposit/withdraw
+174-belt-contract/contracts/earnV2/tokens/SingleStrategyToken.sol,SingleStrategyToken,29,31438,31,31439,5942ba3 fix : fix bug in strategy deposit/withdraw
+183-CORE-v1/contracts/CoreVault.sol,CoreVault,14,32121,15,32122,"88696e1 Added tests and, fixed very obscure possible bug"
+183-CORE-v1/contracts/FeeApprover.sol,FeeApprover,1,32126,15,32127,"88696e1 Added tests and, fixed very obscure possible bug"
+183-CORE-v1/contracts/IFeeApprover.sol,IFeeApprover,1,32136,15,32137,"88696e1 Added tests and, fixed very obscure possible bug"
+191-charged-particles-universe/contracts/ChargedParticles.sol,ChargedParticles,2,32379,3,32380,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/interfaces/IChargedParticles.sol,IChargedParticles,2,32429,3,32430,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/interfaces/IIonTimelock.sol,IIonTimelock,4,32462,59,32463,f4fb60e Fix bugs from bounty (#29)
+191-charged-particles-universe/contracts/interfaces/ISmartWallet.sol,ISmartWallet,2,32471,3,32472,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/interfaces/IWalletManager.sol,IWalletManager,2,32491,3,32492,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/lib/Common.sol,Common,2,32515,3,32516,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/lib/SmartWalletBase.sol,SmartWalletBase,2,32522,3,32523,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/tokens/IonTimelock.sol,IonTimelock,25,32557,59,32555,f4fb60e Fix bugs from bounty (#29)
+191-charged-particles-universe/contracts/tokens/Proton.sol,Proton,57,32592,59,32593,f4fb60e Fix bugs from bounty (#29)
+191-charged-particles-universe/contracts/yield/aave/AaveSmartWallet.sol,AaveSmartWallet,2,32619,3,32620,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+191-charged-particles-universe/contracts/yield/aave/AaveWalletManager.sol,AaveWalletManager,2,32630,3,32631,"62508ea Add remuneration, timelocks, bug fixes, refactors (#1)"
+195-cdz-staking/contracts/libs/Array.sol,Array,1,32749,27,32750,960cf09 fix bugs
+195-cdz-staking/contracts/Masterdemon.sol,Masterdemon,25,32760,27,32761,960cf09 fix bugs
+200-valorem-options-contracts/src/OptionSettlement.sol,OptionSettlementEngine,28,33979,29,33980,991a164 fix bug in exercise logic
+214-BrightID-SmartContract/v3/contracts/BrightID.sol,BrightID,24,35305,25,35306,30a9ef7 fix a bug
+214-BrightID-SmartContract/v3/contracts/BrightID.sol,BrightID,39,35313,41,35314,5059772 fix a bug
+228-ERC820/contracts/ERC820Client.sol,ERC820Client,48,35990,53,35991,ef2fdd0 Bug fix by Jaro (@chompomonim)
+244-synapse-contracts/contracts/synapse/wrappers/NerveMetaBridgeZap.sol,NerveMetaBridgeZap,93,37364,97,37365,2b83dc1 Fix redeem() bug
+245-pyrrha-consensus/contracts/CognitiveJob.sol,CognitiveJob,24,37376,27,37377,f8d9612 Updates and bugfixes
+245-pyrrha-consensus/contracts/CognitiveJob.sol,CognitiveJob,49,37386,53,37387,c508a83 Fixed bug in CognitiveJob constructor
+245-pyrrha-consensus/contracts/CognitiveJob.sol,CognitiveJob,54,37388,55,37389,922a48d Core debugging and unit testing is completed
+245-pyrrha-consensus/contracts/CognitiveJob.sol,CognitiveJob,59,37391,66,37392,ab4efc9 Bugfix
+245-pyrrha-consensus/contracts/entities/IDataEntity.sol,IKernel,74,37428,76,37429,40b0959 Debugged contract deployment following complete project refactoring
+245-pyrrha-consensus/contracts/factories/CognitiveJobFactory.sol,CognitiveJobFactory,67,37438,69,37439,f2b64b0 Improving ad debugging factories functionality
+245-pyrrha-consensus/contracts/factories/WorkerNodeFactory.sol,WorkerNodeFactory,67,37441,69,37442,f2b64b0 Improving ad debugging factories functionality
+245-pyrrha-consensus/contracts/jobs/IJob.sol,IJobs,75,37480,76,37482,40b0959 Debugged contract deployment following complete project refactoring
+245-pyrrha-consensus/contracts/jobs/IJob.sol,ICognitiveJob,75,37481,76,37483,40b0959 Debugged contract deployment following complete project refactoring
+245-pyrrha-consensus/contracts/libraries/StateMachineLib.sol,StateMachineLib,33,37504,55,37505,922a48d Core debugging and unit testing is completed
+245-pyrrha-consensus/contracts/Pandora.sol,Pandora,16,37644,17,37645,4886e26 Fixing compilation bugs
+245-pyrrha-consensus/contracts/Pandora.sol,Pandora,45,37658,50,37659,361e95e Fixing bug with wrong assertion
+245-pyrrha-consensus/contracts/Pandora.sol,Pandora,54,37661,55,37662,922a48d Core debugging and unit testing is completed
+245-pyrrha-consensus/contracts/Pandora.sol,Pandora,67,37664,69,37665,f2b64b0 Improving ad debugging factories functionality
+245-pyrrha-consensus/contracts/PAN.sol,PAN,21,37677,27,37678,f8d9612 Updates and bugfixes
+245-pyrrha-consensus/contracts/WorkerNode.sol,WorkerNode,49,37691,55,37692,922a48d Core debugging and unit testing is completed
+245-pyrrha-consensus/contracts/WorkerNode.sol,WorkerNode,64,37697,69,37698,f2b64b0 Improving ad debugging factories functionality
+245-pyrrha-consensus/test/TestPandora.sol,TestPandora,52,37732,55,37733,922a48d Core debugging and unit testing is completed
+245-pyrrha-consensus/test/TestWorkerNode.sol,TestWorkerNode,52,37744,55,37745,922a48d Core debugging and unit testing is completed
+249-smart-contracts/contracts/examples/SimpleToken.sol,SimpleToken,313,16502,337,16503,ed6e5149 Merge pull request #660 from facuspagnuolo/bugfix/659_add_transfer_event_to_simple_token
+249-smart-contracts/contracts/mocks/ERC721FullMock.sol,ERC721FullMock,709,38265,717,38266,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/mocks/ERC721Mock.sol,ERC721Mock,713,38281,717,38282,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/mocks/SafeERC20Helper.sol,ERC20SucceedingMock,731,38409,749,38410,3111291b Merge pull request #1647 from nventuro/safeerc20-bugfix
+249-smart-contracts/contracts/token/ERC20/SafeERC20.sol,SafeERC20,665,38799,749,38800,3111291b Merge pull request #1647 from nventuro/safeerc20-bugfix
+249-smart-contracts/contracts/token/ERC721/ERC721Enumerable.sol,ERC721Enumerable,711,38841,717,38842,12533bcb ERC721 bugfix + gas optimizations (#1549)
+249-smart-contracts/contracts/token/ERC721/ERC721.sol,ERC721,713,38867,717,38868,12533bcb ERC721 bugfix + gas optimizations (#1549)
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,23,39683,24,39684,c28e366 Fix withdraw bug
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,32,39688,34,39689,07247fd Fix staking amount bug
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,56,39699,58,39700,c1276cf Fix reward payment bug
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,62,39701,63,39702,4a19734 Fix the reward carryover bug
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,70,39708,71,39709,4510da2 Fix the unpooling IOU bug
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,71,39709,72,39710,9c2f0e5 Fix the unpooling IOU bug
+255-api3-contracts/contracts/Api3Pool.sol,Api3Pool,72,39710,73,39711,3e179fa Fix the pooling IOU bug
+256-HuangGai/contractExtractor/reentrancyExtractor/testCase/getLedger.sol,baseContract1,36,42208,38,42212,85ca60a1 left a bug to fix and update code
+256-HuangGai/contractExtractor/reentrancyExtractor/testCase/getLedger.sol,baseContract2,36,42209,38,42213,85ca60a1 left a bug to fix and update code
+256-HuangGai/contractExtractor/reentrancyExtractor/testCase/getLedger.sol,myContract,36,42210,37,42211,c7e2ffa9 fix a bug
+256-HuangGai/src/securityAbandonerAndInjector/contractAffectedByMiners/cache/temp.sol,Ownable,91,38486,94,56327,64d197c8 update code and fix bugs
+256-HuangGai/src/securityAbandonerAndInjector/contractAffectedByMiners/cache/temp.sol,SafeMath,91,3961,94,774,64d197c8 update code and fix bugs
+259-contract/depth.otc/OtcV1.sol,DepthOtcV1,41,62291,55,62292,8a91454 fix bug
+259-contract/depth.otc/Storage.sol,OtcStorage,35,62296,54,62297,7566df6 fix bug
+260-heco-contracts/contracts/mock/MockValidators.sol,MockValidators,1,62361,3,62362,"9171654 feat, fix: removed validator have to repropose proposal and fix bugs."
+260-heco-contracts/contracts/Params.sol,Params,1,62364,3,62365,"9171654 feat, fix: removed validator have to repropose proposal and fix bugs."
+260-heco-contracts/contracts/Proposal.sol,Proposal,1,62368,3,62369,"9171654 feat, fix: removed validator have to repropose proposal and fix bugs."
+260-heco-contracts/contracts/v1/CandidatePool.sol,CandidatePool,32,62379,34,62380,42290bc 1. set system contract address; 2. fix bug;
+260-heco-contracts/contracts/v1/CandidatePool.sol,CandidatePool,35,62381,36,62382,7a17a40 fix bug. punish init candidate error.
+260-heco-contracts/contracts/v1/Candidate.sol,Candidate,17,62383,19,62384,2ffc687 fix bug
+260-heco-contracts/contracts/v1/Validator.sol,Validator,18,62460,19,62461,2ffc687 fix bug
+260-heco-contracts/contracts/Validators.sol,Validators,1,62505,3,62506,"9171654 feat, fix: removed validator have to repropose proposal and fix bugs."
+262-pendle-core/contracts/core/abstract/PendleForgeBase.sol,PendleForgeBase,112,62687,120,62688,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/abstract/PendleMarketBase.sol,PendleMarketBase,112,62728,114,62729,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/BenchmarkAaveForge.sol,BenchmarkAaveForge,27,62770,30,62771,7ad9753 fix tokenisation bugs and tests
+262-pendle-core/contracts/core/BenchmarkMarket.sol,BenchmarkMarket,28,62810,30,62811,7ad9753 fix tokenisation bugs and tests
+262-pendle-core/contracts/core/Benchmark.sol,Benchmark,27,62831,30,62832,7ad9753 fix tokenisation bugs and tests
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,66,62868,71,62869,cfbd2da Merge pull request #50 from benchmark-finance/bug/forge-events
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,82,62873,88,62874,12891cd Merge pull request #79 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,90,62875,93,62876,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,110,62882,114,62883,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,114,62883,118,62884,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveForge.sol,PendleAaveForge,118,62884,120,62885,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveLiquidityMining.sol,PendleAaveLiquidityMining,112,62890,114,62891,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveLiquidityMining.sol,PendleAaveLiquidityMining,114,62891,118,62892,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveLiquidityMining.sol,PendleAaveLiquidityMining,118,62892,120,62893,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveMarket.sol,PendleAaveMarket,112,62902,114,62903,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveMarket.sol,PendleAaveMarket,114,62903,118,62904,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveMarket.sol,PendleAaveMarket,118,62904,120,62905,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveV2Forge.sol,PendleAaveV2Forge,112,62915,114,62916,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveV2Forge.sol,PendleAaveV2Forge,114,62916,118,62917,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleAaveV2Forge.sol,PendleAaveV2Forge,118,62917,120,62918,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundForge.sol,PendleCompoundForge,90,62930,93,62931,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+262-pendle-core/contracts/core/PendleCompoundForge.sol,PendleCompoundForge,110,62938,114,62939,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundForge.sol,PendleCompoundForge,114,62939,118,62940,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundForge.sol,PendleCompoundForge,118,62940,120,62941,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundLiquidityMining.sol,PendleCompoundLiquidityMining,112,62946,114,62947,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundLiquidityMining.sol,PendleCompoundLiquidityMining,114,62947,118,62948,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundMarket.sol,PendleCompoundMarket,110,62954,114,62955,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleCompoundMarket.sol,PendleCompoundMarket,114,62955,118,62956,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleForgeBase.sol,PendleForgeBase,94,62985,96,62986,d8b3fdb Merge pull request #105 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/core/PendleMarketFactory.sol,PendleMarketFactory,91,63015,93,63016,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+262-pendle-core/contracts/core/PendleMarketReader.sol,PendleMarketReader,107,63020,114,63021,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleMarketReader.sol,PendleMarketReader,145,63024,148,63025,5a5d651 Fix bug that caused ETH transfer to work incorrectly & integrate UNI into tests
+262-pendle-core/contracts/core/PendleMarket.sol,PendleMarket,69,63028,71,63029,cfbd2da Merge pull request #50 from benchmark-finance/bug/forge-events
+262-pendle-core/contracts/core/PendleMarket.sol,PendleMarket,85,63037,88,63038,12891cd Merge pull request #79 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/core/PendleMarket.sol,PendleMarket,92,63041,93,63042,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+262-pendle-core/contracts/core/PendleRewardManager.sol,PendleRewardManager,145,63058,147,63059,48c039f Fix bug in wrongly skipping updatePendingRewards (#216)
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,87,63071,88,63072,12891cd Merge pull request #79 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,92,63075,93,63076,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,94,63077,96,63078,d8b3fdb Merge pull request #105 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,112,63088,114,63089,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/core/PendleRouter.sol,PendleRouter,145,63100,148,63101,5a5d651 Fix bug that caused ETH transfer to work incorrectly & integrate UNI into tests
+262-pendle-core/contracts/interfaces/IBenchmarkForge.sol,IBenchmarkForge,27,63161,30,63162,7ad9753 fix tokenisation bugs and tests
+262-pendle-core/contracts/interfaces/IBenchmark.sol,IBenchmark,26,63175,30,63176,7ad9753 fix tokenisation bugs and tests
+262-pendle-core/contracts/interfaces/IPendleAaveForge.sol,IPendleAaveForge,104,63207,114,63208,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/interfaces/IPendleAaveForge.sol,IPendleAaveForge,114,63208,118,63209,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/interfaces/IPendleCompoundForge.sol,IPendleCompoundForge,110,63218,114,63219,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/interfaces/IPendleCompoundForge.sol,IPendleCompoundForge,114,63219,118,63220,accabcb Merge pull request #137 from pendle-finance/bug-fixes
+262-pendle-core/contracts/interfaces/IPendleForge.sol,IPendleForge,66,63238,71,63239,cfbd2da Merge pull request #50 from benchmark-finance/bug/forge-events
+262-pendle-core/contracts/interfaces/IPendleForge.sol,IPendleForge,79,63241,88,63242,12891cd Merge pull request #79 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/interfaces/IPendleForge.sol,IPendleForge,94,63243,96,63244,d8b3fdb Merge pull request #105 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/interfaces/IPendleForge.sol,IPendleForge,112,63247,120,63249,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/interfaces/IPendleMarket.sol,IPendleMarket,67,63292,71,63293,cfbd2da Merge pull request #50 from benchmark-finance/bug/forge-events
+262-pendle-core/contracts/interfaces/IPendleMarket.sol,IPendleMarket,82,63296,88,63297,12891cd Merge pull request #79 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/interfaces/IPendleMarket.sol,IPendleMarket,107,63302,114,63303,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/interfaces/IPendleRewardManager.sol,IPendleRewardManager,145,63324,147,63325,48c039f Fix bug in wrongly skipping updatePendingRewards (#216)
+262-pendle-core/contracts/interfaces/IPendleRouter.sol,IPendleRouter,84,63333,88,63334,12891cd Merge pull request #79 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/interfaces/IPendleRouter.sol,IPendleRouter,94,63335,96,63336,d8b3fdb Merge pull request #105 from benchmark-finance/bug/forge-events-2
+262-pendle-core/contracts/interfaces/IPendleRouter.sol,IPendleRouter,112,63343,114,63345,104d426 Merge pull request #132 from pendle-finance/bug-fixes
+262-pendle-core/contracts/libraries/MathLib.sol,Math,104,63420,120,63421,92f9f5b Merge pull request #138 from pendle-finance/bug-fixes
+262-pendle-core/contracts/periphery/Permissions.sol,Permissions,91,63525,93,63526,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+262-pendle-core/contracts/tokens/BenchmarkOwnershipToken.sol,BenchmarkOwnershipToken,27,62664,30,63552,7ad9753 fix tokenisation bugs and tests
+262-pendle-core/contracts/tokens/PendleFutureYieldToken.sol,PendleFutureYieldToken,73,63570,93,63571,a541c21 Merge pull request #98 from benchmark-finance/fixing-bugs
+263-contracts-v2/contracts/DrainController.sol,DrainController,42,63699,61,63700,8ba8c3d fix: bug in weth accumulator when blocks increase past the distribution period
+263-contracts-v2/contracts/DrainController.sol,DrainController,61,63700,71,63701,414f8b9 debug: push changes for debug collab
+263-contracts-v2/contracts/MasterVampire.sol,MasterVampire,42,63774,61,63775,8ba8c3d fix: bug in weth accumulator when blocks increase past the distribution period
+263-contracts-v2/contracts/MasterVampire.sol,MasterVampire,61,63775,67,63776,163eba4 fix: another bug around calculating reward from blocks
+263-contracts-v2/contracts/MasterVampire.sol,MasterVampire,67,63776,71,63777,414f8b9 debug: push changes for debug collab
+263-contracts-v2/contracts/test/MockAdapter.sol,MockAdapter,44,63804,71,63805,414f8b9 debug: push changes for debug collab
+263-contracts-v2/contracts/test/MockRariFundManager.sol,MockRariFundManager,42,63816,71,63817,414f8b9 debug: push changes for debug collab
+263-contracts-v2/contracts/test/MockRariFundManager.sol,MockRariFundManager,71,63817,75,63818,50698d6 fix: bug in rari fundmanager mock
+271-sarcophagus-contracts/contracts/Sarcophagus.sol,Sarcophagus,33,64109,38,64110,"20d005f Fix a bug, deploy updates"
+274-beta/contracts/TroveManager.sol,TroveManager,1,64191,8,64192,621f752 Fix DefaultPool / pending rewards bug in liquidations
+292-blindboxes-contracts/contracts/interfaces/IVoteStaking.sol,IVoteStaking,27,64808,28,64809,1672a4e Fixes bugs in Staking and VoteStaking.
+292-blindboxes-contracts/contracts/mock/MockLinkAccessor.sol,MockLinkAccessor,12,64815,13,64816,beea2be Fixes bug in fulfillRandomness and claimFee.
+292-blindboxes-contracts/contracts/NFTMaster.sol,NFTMaster,12,64830,13,64831,beea2be Fixes bug in fulfillRandomness and claimFee.
+292-blindboxes-contracts/contracts/Staking.sol,Staking,27,64842,28,64843,1672a4e Fixes bugs in Staking and VoteStaking.
+292-blindboxes-contracts/contracts/Staking.sol,Staking,29,64844,30,64845,e3ced1c Fixes bug in staking by updating totalBalance of pool.
+292-blindboxes-contracts/contracts/Staking.sol,Staking,30,64845,31,64846,"dd3c64a Fixes bugs: 1) Uses Event to track user voting, instead of Receipt 2) Only after userVoteEndBlock, withdraw from VoteStaking 3) ClaimLater tracks the correct amount"
+292-blindboxes-contracts/contracts/VoteStaking.sol,VoteStaking,27,64856,28,64857,1672a4e Fixes bugs in Staking and VoteStaking.
+294-golem-contracts/contracts/GNTDeposit.sol,GNTDeposit,12,64899,15,64900,6886962 fix bug in withdrawals; refactor
+294-golem-contracts/contracts/PaymentChannel.sol,GNTPaymentChannels,9,64980,10,64981,"3f3cfa3 add tests for withdrawal, fix bug"
+294-golem-contracts/contracts/PaymentChannel.sol,GNTPaymentChannels,10,64981,11,64982,a77d9e5 major bug
+294-golem-contracts/contracts/PaymentChannel.sol,GNTPaymentChannels,14,64984,15,64985,6886962 fix bug in withdrawals; refactor
+294-golem-contracts/contracts/PaymentChannel.sol,GNTPaymentChannels,15,64985,17,64986,ff1ab76 critical bug
+294-golem-contracts/contracts/PaymentChannel.sol,GNTPaymentChannels,22,64988,23,64989,4f1f8d4 minor bugfix
+298-folia-contracts/contracts/FoliaControllerV2.sol,FoliaControllerV2,33,65440,35,65441,e987771 bug
+298-folia-contracts/flat/contracts/FoliaControllerV2.sol,FoliaControllerV2,32,65439,35,65441,e987771 bug
+302-MyBit-Network.tech/Contracts/contracts/AssetCreation.sol,AssetCreation,53,65591,59,65592,050a25a cleaned up deploy process + starting bug bounty
+302-MyBit-Network.tech/Contracts/contracts/BugBank.sol,BugBank,77,65627,79,65628,00739ec filled out bugbounty functionality
+302-MyBit-Network.tech/Contracts/contracts/BugBank.sol,BugBank,79,65628,81,65629,edfc0a7 bugbounty + staking now upgradeable. Payments almost finished
+302-MyBit-Network.tech/Contracts/contracts/BugBank.sol,BugBank,81,65629,83,65630,"511c636 all contracts compiling, begin testing bugbounty & tokenStake"
+302-MyBit-Network.tech/Contracts/contracts/BugBounty.sol,BugBounty,70,65633,72,65634,1cb91ee built staking + bugbounty architecture
+302-MyBit-Network.tech/Contracts/contracts/BugBounty.sol,BugBounty,72,65634,76,65635,0159579 reformatting token stake + bug bounty
+302-MyBit-Network.tech/Contracts/contracts/BugBounty.sol,BugBounty,76,65635,77,65636,e240a18 added tokenbank and bugbank to handle ether payments
+302-MyBit-Network.tech/Contracts/contracts/BugBounty.sol,BugBounty,77,65636,79,65637,00739ec filled out bugbounty functionality
+302-MyBit-Network.tech/Contracts/contracts/BugBounty.sol,BugBounty,79,65637,81,65638,edfc0a7 bugbounty + staking now upgradeable. Payments almost finished
+302-MyBit-Network.tech/Contracts/contracts/BugBounty.sol,BugBounty,81,65638,83,65639,"511c636 all contracts compiling, begin testing bugbounty & tokenStake"
+302-MyBit-Network.tech/Contracts/contracts/BugEscrow.sol,BugEscrow,53,65641,59,65642,050a25a cleaned up deploy process + starting bug bounty
+302-MyBit-Network.tech/Contracts/contracts/ContractManager.sol,ContractManager,53,65643,59,65644,050a25a cleaned up deploy process + starting bug bounty
+302-MyBit-Network.tech/Contracts/contracts/Database.sol,Database,53,65664,72,65665,1cb91ee built staking + bugbounty architecture
+302-MyBit-Network.tech/Contracts/contracts/ExpertBounty.sol,ExpertBounty,73,65671,76,65672,0159579 reformatting token stake + bug bounty
+302-MyBit-Network.tech/Contracts/contracts/FundingHub.sol,FundingHub,75,65681,77,65682,e240a18 added tokenbank and bugbank to handle ether payments
+302-MyBit-Network.tech/Contracts/contracts/FundingHub.sol,FundingHub,77,65682,83,65683,"511c636 all contracts compiling, begin testing bugbounty & tokenStake"
+302-MyBit-Network.tech/Contracts/contracts/MyBitToken.sol,MyBitToken,53,65496,203,65717,9aa304b Merge pull request #32 from MyBitFoundation/bug/fix-tests
+302-MyBit-Network.tech/Contracts/contracts/Owned.sol,Owned,53,65733,59,65734,050a25a cleaned up deploy process + starting bug bounty
+302-MyBit-Network.tech/Contracts/contracts/StakingBank.sol,StakingBank,77,65739,79,65740,00739ec filled out bugbounty functionality
+302-MyBit-Network.tech/Contracts/contracts/StakingBank.sol,StakingBank,79,65740,83,65741,"511c636 all contracts compiling, begin testing bugbounty & tokenStake"
+302-MyBit-Network.tech/Contracts/contracts/StakingBank.sol,StakingBank,195,65501,203,65745,9aa304b Merge pull request #32 from MyBitFoundation/bug/fix-tests
+302-MyBit-Network.tech/Contracts/contracts/TokenBurn.sol,TokenBurn,53,65751,59,65752,050a25a cleaned up deploy process + starting bug bounty
+302-MyBit-Network.tech/Contracts/contracts/TokenBurn.sol,TokenBurn,75,65754,76,65753,0159579 reformatting token stake + bug bounty
+302-MyBit-Network.tech/Contracts/contracts/TokenBurn.sol,TokenBurn,78,65755,81,65753,edfc0a7 bugbounty + staking now upgradeable. Payments almost finished
+302-MyBit-Network.tech/Contracts/contracts/TokenBurn.sol,TokenBurn,81,65753,83,65756,"511c636 all contracts compiling, begin testing bugbounty & tokenStake"
+302-MyBit-Network.tech/Contracts/contracts/TokenStake.sol,TokenStake,70,65780,72,65781,1cb91ee built staking + bugbounty architecture
+304-erc-792/contracts/examples/SimpleCentralizedArbitrator.sol,SimpleCentralizedArbitrator,151,66323,170,66324,"32480dd fix(simple-centralized-arbitrator): bug in createDispute, wrong disputeID"
+304-erc-792/contracts/examples/SimpleEscrow.sol,SimpleEscrow,55,66332,57,66333,f56602a fix(simple-escrow-*): require statement order for better debugging
+304-erc-792/contracts/examples/SimpleEscrowWithERC1497.sol,SimpleEscrowWithERC1497,55,66350,57,66351,f56602a fix(simple-escrow-*): require statement order for better debugging
+313-wepiggy-contracts/contracts/farm/migrator/AToken2PTokenMigrator.sol,AToken2PTokenMigrator,42,66472,47,66473,844a23c fix bug: because of the usdt apprive
+313-wepiggy-contracts/contracts/farm/migrator/ATokenMigrator.sol,ATokenMigrator,18,66475,30,66476,ee167fa fix migrator bug
+313-wepiggy-contracts/contracts/farm/migrator/ATokenMigrator.sol,ATokenMigrator,30,66476,31,66477,d1c400c fix bugs
+313-wepiggy-contracts/contracts/farm/migrator/ATokenMigrator.sol,ATokenMigrator,31,66477,47,66478,844a23c fix bug: because of the usdt apprive
+313-wepiggy-contracts/contracts/farm/migrator/CErc20Migrator.sol,CErc20Migrator,18,66479,30,66480,ee167fa fix migrator bug
+313-wepiggy-contracts/contracts/farm/migrator/CErc20Migrator.sol,CErc20Migrator,30,66480,47,66481,844a23c fix bug: because of the usdt apprive
+313-wepiggy-contracts/contracts/farm/PiggyBreeder.sol,PiggyBreeder,1,66485,2,66486,cdadec2 fix pending view bug
+313-wepiggy-contracts/contracts/farm/PiggyBreeder.sol,PiggyBreeder,11,66488,14,62352,"38c1e24 fix bug. in migrate function, add tUser.rewardDebt"
+313-wepiggy-contracts/contracts/farm/PiggyDistribution.sol,PiggyDistribution,21,66492,48,66493,a6a9530 fix PiggyDistribution's bug
+313-wepiggy-contracts/contracts/farm/PiggyDistribution.sol,PiggyDistribution,48,66493,49,66494,610c0dc fix PiggyDistribution's bug
+313-wepiggy-contracts/contracts/mock/MockErc20.sol,MockERC20,12,66508,26,66509,23990ee fix bug
+313-wepiggy-contracts/contracts/oracle/SimplePriceOracle.sol,SimplePriceOracle,23,66513,26,66514,23990ee fix bug
+313-wepiggy-contracts/contracts/oracle/WePiggyPriceOracleV1.sol,WePiggyPriceOracleV1,32,66516,35,66517,52b9adb fix WePiggyPriceOracleV1.sol bug
+313-wepiggy-contracts/contracts/token/IPToken.sol,IPToken,22,66536,25,66537,b3638f1 fix ptoken bug
+313-wepiggy-contracts/contracts/token/PToken.sol,PToken,22,66545,25,66546,b3638f1 fix ptoken bug
+313-wepiggy-contracts/contracts/token/PToken.sol,PToken,25,66546,26,66547,23990ee fix bug
+313-wepiggy-contracts/contracts/token/PToken.sol,PToken,26,66547,40,66548,222159f fix borrowInterestBalancePriorInternal bug
+315-market-contracts/contracts/auction/ClockAuction.sol,ClockAuction,81,66693,82,66694,0197c59 fix bug
+316-contracts/src/core/ElasticDAO.sol,ElasticDAO,132,66878,136,66879,5f5ef1c fixes bug in the proxy owner setup
+319-aztec-connect-bridge-contracts/contracts/Curve3PoolBridge.sol,Curve3PoolBridge,10,128979,13,128980,20900b0 bug: inputValue not dx
+319-aztec-connect-bridge-contracts/contracts/CurveTricrypto2Bridge.sol,CurveTricrypto2Bridge,11,128990,13,128991,20900b0 bug: inputValue not dx
+345-contracts/contracts/IRToken.sol,IRToken,12,129951,21,129952,f0f1287 fixed bug on test
+345-contracts/contracts/IVaultHandler.sol,IVaultHandler,30,129962,32,129963,bc10373 fixed bug with burn fee
+345-contracts/contracts/LiquidityReward.sol,LiquidityReward,57,129979,62,129980,7a38fca fixed bug on claim vesting
+345-contracts/contracts/Orchestrator.sol,Orchestrator,34,130021,36,130022,799e8f8 fixed bug with function timelock
+349-spartanswap-contracts/contracts/Bondv4.sol,Bond,55,130263,58,130264,b836a7a calcLiquidityShare BUG Fix
+349-spartanswap-contracts/contracts/BondVault.sol,BondVault,48,130275,58,130276,b836a7a calcLiquidityShare BUG Fix
+349-spartanswap-contracts/contracts/DaoV2.sol,Dao,55,130307,58,130308,b836a7a calcLiquidityShare BUG Fix
+349-spartanswap-contracts/contracts/poolFactory.sol,PoolFactory,48,130374,53,130375,3058ac8 ChangeDao Bug  Fix
+349-spartanswap-contracts/contracts/poolV2.sol,Pool,48,130387,53,130388,3058ac8 ChangeDao Bug  Fix
+349-spartanswap-contracts/contracts/poolV2.sol,Pool,53,130388,58,130389,b836a7a calcLiquidityShare BUG Fix
+349-spartanswap-contracts/contracts/synthFactory.sol,SynthFactory,48,130504,53,130505,3058ac8 ChangeDao Bug  Fix
+349-spartanswap-contracts/contracts/synth.sol,Synth,48,130510,53,130511,3058ac8 ChangeDao Bug  Fix
+349-spartanswap-contracts/contracts/synth.sol,Synth,53,130511,58,130512,b836a7a calcLiquidityShare BUG Fix
+349-spartanswap-contracts/contracts/UtilsV2.sol,Utils,48,130581,58,130582,b836a7a calcLiquidityShare BUG Fix
+364-land/contracts/LandBase.sol,LandBase,57,131237,58,131238,5f403fc Fix bugs
+385-exchange-callees/src/OasisDexCallee.t.sol,DutchClipperTest,8,131878,9,131880,fd54674 buggy tests need detective work
+385-exchange-callees/src/OasisDexCallee.t.sol,MockOtc,8,131877,9,131879,fd54674 buggy tests need detective work
+402-account-contracts/contracts/account/MultisigRecovery.sol,MultisigRecovery,138,132707,145,132708,"f2cf247 remove proof indexes, remove debugs, update 2429"
+402-account-contracts/contracts/cryptography/MerkleMultiProof.sol,MerkleMultiProof,139,132749,145,132750,"f2cf247 remove proof indexes, remove debugs, update 2429"
+402-account-contracts/contracts/cryptography/MerkleMultiProofWrapper.sol,MerkleMultiProofWrapper,144,132756,145,132757,"f2cf247 remove proof indexes, remove debugs, update 2429"
+411-radicle-contracts-tests/src/RadicleTests.t.sol,RadicleContractsTests,4,133098,5,133099,1dae8e9 vesting bug demonstration
+411-radicle-contracts-tests/src/RadicleTests.t.sol,RegistrarRPCTests,25,133125,28,133128,76bb0aa test for reregistration bug
+427-smart-contracts/contracts/MasterChef.sol,MasterChef,25,100,36,101,3ccb11d Add events and fix emergency withdraw bug
+427-smart-contracts/contracts/MasterChef.sol,MasterChef,61,133403,64,133404,f7996c6 fix: stakaing bugs
+429-contracts/contracts/interfaces/IWrapper.sol,IWrapper,106,133458,108,133459,149c966 Merge pull request #107 from terminator0x/feat/permit-flow-and-bug-fixes
+429-contracts/contracts/interfaces/uniswap/IUniswapV2.sol,IUniswapV2,71,133478,108,133479,149c966 Merge pull request #107 from terminator0x/feat/permit-flow-and-bug-fixes
+429-contracts/contracts/wrapper/WrapAndUnWrap.sol,WrapAndUnWrap,107,133620,108,133621,149c966 Merge pull request #107 from terminator0x/feat/permit-flow-and-bug-fixes
+429-contracts/contracts/wrapper/WrapAndUnWrapSushi.sol,WrapAndUnWrapSushi,107,133628,108,133629,149c966 Merge pull request #107 from terminator0x/feat/permit-flow-and-bug-fixes
+429-contracts/contracts/yield/LP2LP.sol,LP2LP,106,133633,108,133634,149c966 Merge pull request #107 from terminator0x/feat/permit-flow-and-bug-fixes
+448-automatic-market-maker/AutomaticMarketMakerV2.sol,AutomaticMarketMakerV2,11,134178,12,134179,6775e81 1. Fix some minor bugs 2. Change deus name to dbETH
+448-automatic-market-maker/WETHProxy.sol,IAMM,11,134197,12,134199,6775e81 1. Fix some minor bugs 2. Change deus name to dbETH
+448-automatic-market-maker/WETHProxy.sol,WethProxy,11,134198,12,134201,6775e81 1. Fix some minor bugs 2. Change deus name to dbETH
+450-ethereum-rockpaperscissors/rockpaperscissors.sol,RockPaperScissors,12,134209,13,134210,34aa55c Fix bug
+451-lava-wallet/contracts/LavaWallet.sol,LavaWallet,20,134225,24,134226,45c6be2 fixing lava wallet bugs
+451-lava-wallet/contracts/LavaWallet.sol,LavaWallet,24,134226,25,134227,8331b37 fix bug
+461-swap-contracts-periphery/contracts/ExampleOracleSimple.sol,ExampleOracleSimple,46,1069,54,1070,3563d08 fix ExampleOracleSimple counterfactual accumulation bug
+461-swap-contracts-periphery/contracts/UniswapV2Migrator.sol,UniswapV2Migrator,16,1211,19,1212,7f3502c fix up bugs
+461-swap-contracts-periphery/contracts/UniswapV2Router.sol,UniswapV2Router,18,1243,19,1244,7f3502c fix up bugs
+475-contract/contracts/poc/Poc.sol,Poc,25,135044,27,135045,"afd9eb7 Fix bug, add SubContract function"
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,93,135062,94,135063,fe6fa29 fix bugs of ArbitrableProxy`
+476-arbitrable-proxy-contracts/contracts/ArbitrableProxy.sol,ArbitrableProxy,211,135103,216,135104,a6e1b0a fix(arbitrable-proxy): a vulnerability in createDispute lets attacker to create disputes for free using contract balance if any
+476-arbitrable-proxy-contracts/contracts/AutoAppealableArbitrator.sol,AutoAppealableArbitrator,73,135113,74,135114,b736597 fix(contract): upgrade bugs
+476-arbitrable-proxy-contracts/contracts/BinaryArbitrableProxy.sol,BinaryArbitrableProxy,73,135157,74,135158,b736597 fix(contract): upgrade bugs
+482-actus-solidity/contracts/Core/Core.sol,Core,1,135266,17,135267,aac93b2 Fix bugs in Core and PAMEngine
+482-actus-solidity/contracts/Engines/PAMEngine.sol,PAMEngine,1,135311,17,135312,aac93b2 Fix bugs in Core and PAMEngine
+484-generative-nft-contract/contracts/generativeNFT.sol,generativeNFT,6,135349,7,135350,38da472 refactoring &  bug fixes
+484-generative-nft-contract/contracts/generativeNFT.sol,generativeNFT,7,135350,8,135351,d0334f2 bug fixes
+485-Dcourt/contracts/DCT.sol,DCT,8,135388,11,135389,33c03eb1 Fixed delegatePercentage() bug
+495-coin98-token-contract/contracts/C98ERC20.sol,ERC20,8,136817,9,136818,f9becc9 Fix bug
+495-coin98-token-contract/contracts/C98ERC20.sol,ERC20,9,136818,10,136819,c565af6 Fix bug
+495-coin98-token-contract/contracts/C98ERC20.sol,Ownable,13,136823,14,136826,35eb64b Fix accept ownership bug
+518-BCO-Redeem/bcoredeem.sol,SafeMath,2,774,10,4252,83fac80 bugfix
+518-BCO-Redeem/bcoredeem.sol,TetherToken,2,137501,10,137508,83fac80 bugfix
+518-BCO-Redeem/bcoredeem.sol,BCORedeem,7,137507,10,137509,83fac80 bugfix
+518-BCO-Redeem/bcoredeem.sol,BCORedeem,10,137509,11,137510,"a2baddd bugfix, tests"
+518-BCO-Redeem/bcoredeem.sol,BCORedeem,11,137510,14,137511,6bcda63 bugfix
